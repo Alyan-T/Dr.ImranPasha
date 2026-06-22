@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grants &amp; Students — Prof. Dr. Imran Pasha</title>
+  <meta name="description" content="Research grants, consultancy, student supervision, and mentorship record of Prof. Dr. Imran Pasha, UAF." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .grant-tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      padding: 0.12rem 0.45rem;
+      border-radius: 2px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-right: 0.35rem;
+      vertical-align: middle;
+    }
+    .tag-pi { background: rgba(10,35,66,0.1); color: var(--navy); }
+    .tag-copi { background: rgba(139,0,0,0.1); color: var(--crimson); }
+    .tag-pm { background: rgba(200,169,106,0.15); color: #8a6d25; }
+    .tag-member { background: rgba(107,114,128,0.12); color: var(--muted); }
+    .tag-progress { background: rgba(22,163,74,0.1); color: #166534; }
+
+    .supervision-visual {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .sv-card {
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .sv-header {
+      background: var(--navy);
+      padding: 0.85rem 1.25rem;
+    }
+    .sv-degree {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+    }
+    .sv-body { padding: 1.25rem; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    .sv-stat { text-align: center; }
+    .sv-num {
+      display: block;
+      font-family: var(--ff-head);
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1;
+    }
+    .sv-label { font-size: 0.72rem; color: var(--muted); margin-top: 0.25rem; }
+    .sv-divider { width: 1px; background: var(--border); align-self: stretch; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Prof. Dr. Imran Pasha</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="grants.html">Grants</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="breadcrumb-inner">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="breadcrumb-current">Grants &amp; Students</span>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <span class="page-hero-eyebrow">Funding &amp; Mentorship</span>
+      <h1>Grants &amp; Students</h1>
+      <div class="page-hero-divider"></div>
+      <p>27 research grants, 460+ supervised students, and consulting partnerships with global organizations from WWF to Government of Canada.</p>
+    </div>
+  </div>
+
+  <!-- Grant Summary -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="two-col">
+        <div class="section-label-col">
+          <span class="section-label">Funding</span>
+        </div>
+        <div class="section-content-col">
+          <h2 class="section-heading">Research Grant Overview</h2>
+          <div class="grant-summary">
+            <div class="gs-item">
+              <span class="gs-num">27</span>
+              <span class="gs-desc">Total Grants<br/>(Completed &amp; In Progress)</span>
+            </div>
+            <div class="gs-item">
+              <span class="gs-num">12</span>
+              <span class="gs-desc">As Principal<br/>Investigator</span>
+            </div>
+            <div class="gs-item">
+              <span class="gs-num">14</span>
+              <span class="gs-desc">As Co-PI / Project<br/>Manager</span>
+            </div>
+          </div>
+          <p style="font-size:0.82rem;color:var(--muted);">Funding sources include HEC (Pakistan), PARB, ACIAR, Global Affairs Canada, IFPRI, Nutrition International (Ottawa), WWF, and international universities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Completed Grants -->
+  <section class="section">
+    <div class="container">
+      <div class="two-col">
+        <div class="section-label-col">
+          <span class="section-label">Completed</span>
+        </div>
+        <div class="section-content-col">
+          <h2 class="section-heading">Completed Grants</h2>
+
+          <!-- Filter tabs -->
+          <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="all">All Roles</button>
+            <button class="filter-tab" data-filter="pi">Principal Investigator</button>
+            <button class="filter-tab" data-filter="copi">Co-PI</button>
+            <button class="filter-tab" data-filter="pm">Project Manager</button>
+          </div>
+
+          <ul class="grant-list">
+            <li data-category="pi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">PI</span> Principal Investigator
+              </div>
+              <div class="grant-title">Commercialization of Specialty Multigrain Flour (MaxGrain®) for baked products utilizing indigenous cereals</div>
+              <div class="grant-meta">HEC-TTSF 2020 — Rs. 10.93 million</div>
+            </li>
+            <li data-category="pi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">PI</span> Principal Investigator
+              </div>
+              <div class="grant-title">Linking nutrition to cereal brans: production and commercialization of modified bran flours</div>
+              <div class="grant-meta">HEC TDF — Rs. 8.351 million &nbsp;|&nbsp; 2018–2020</div>
+            </li>
+            <li data-category="pm">
+              <div class="grant-role">
+                <span class="grant-tag tag-pm">PM</span> Project Manager
+              </div>
+              <div class="grant-title">Composite flour technology: a step towards managing malnutrition and food security in Pakistan</div>
+              <div class="grant-meta">PARB Lahore — Rs. 6.1784 million &nbsp;|&nbsp; 2017–2019</div>
+            </li>
+            <li data-category="pm">
+              <div class="grant-role">
+                <span class="grant-tag tag-member">Member</span> Team Member
+              </div>
+              <div class="grant-title">Situation analysis of large-scale wheat flour, edible oil &amp; ghee fortification</div>
+              <div class="grant-meta">Nutrition International, Ottawa, Canada — Rs. 7.9326 million &nbsp;|&nbsp; 2014</div>
+            </li>
+            <li data-category="copi">
+              <div class="grant-role">
+                <span class="grant-tag tag-copi">Co-PI</span> Co-Principal Investigator
+              </div>
+              <div class="grant-title">Accelerating genetic gain in wheat through hybrid breeding in Bangladesh, Ethiopia and Pakistan</div>
+              <div class="grant-meta">ACIAR — USD 1.9 million &nbsp;|&nbsp; 2022–2026</div>
+            </li>
+            <li data-category="pm">
+              <div class="grant-role">
+                <span class="grant-tag tag-pm">PM</span> Project Manager
+              </div>
+              <div class="grant-title">Documenting and mitigating the impact of pesticides and heavy metal residues on vegetables</div>
+              <div class="grant-meta">PARB Lahore — Rs. 9.021 million &nbsp;|&nbsp; 2011–2016</div>
+            </li>
+            <li data-category="pi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">PI</span> Principal Investigator
+              </div>
+              <div class="grant-title">Development of nutritionally enhanced multigrain products using fortified wheat flour composites</div>
+              <div class="grant-meta">HEC National Research Program — Rs. 5.4 million &nbsp;|&nbsp; 2015–2018</div>
+            </li>
+            <li data-category="pi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">PI</span> Principal Investigator
+              </div>
+              <div class="grant-title">Value addition of rice and wheat bran through extrusion and fermentation</div>
+              <div class="grant-meta">PARB Lahore — Rs. 4.8 million &nbsp;|&nbsp; 2013–2016</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- In-Progress Grants -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="two-col">
+        <div class="section-label-col">
+          <span class="section-label">In Progress</span>
+        </div>
+        <div class="section-content-col">
+          <h2 class="section-heading">Current Grants</h2>
+          <ul class="grant-list">
+            <li>
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">PI</span>
+                <span class="grant-tag tag-progress">Active</span> Principal Investigator
+              </div>
+              <div class="grant-title">Nutritional profiling of milk from different mammalian species with reference to proteomics and genomic studies</div>
+              <div class="grant-meta">International Collaboration — Chungnam National University, Korea — USD 30,000 &nbsp;|&nbsp; 2023–2025</div>
+            </li>
+            <li>
+              <div class="grant-role">
+                <span class="grant-tag tag-copi">Co-PI</span>
+                <span class="grant-tag tag-progress">Active</span> Co-Principal Investigator
+              </div>
+              <div class="grant-title">Development of a Novel Excipient Using Green Banana for Sustainable Production of Nutraceuticals</div>
+              <div class="grant-meta">HEC TDF — Rs. 9.18 million &nbsp;|&nbsp; 2025–2027</div>
+            </li>
+            <li>
+              <div class="grant-role">
+                <span class="grant-tag tag-pm">PM</span>
+                <span class="grant-tag tag-progress">Active</span> Project Manager
+              </div>
+              <div class="grant-title">Mapping the Farm and Market Level Footprint of Zinc Wheat in Punjab, Pakistan</div>
+              <div class="grant-meta">Global Affairs Canada (GAS/IFPR) — Rs. 2.4064 million &nbsp;|&nbsp; 2024</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultancy -->
+  <section class="section">
+    <div class="container">
+      <div class="two-col">
+        <div class="section-label-col">
+          <span class="section-label">Consultancy</span>
+        </div>
+        <div class="section-content-col">
+          <h2 class="section-heading">Consultancy &amp; Policy</h2>
+          <ul class="grant-list">
+            <li>
+              <div class="grant-role">Policy Development Consultant</div>
+              <div class="grant-title">Punjab Fortification Strategy and Policy</div>
+              <div class="grant-meta">Provincial Fortification Alliance, Punjab Food Department — Launched June 27, 2018</div>
+            </li>
+            <li>
+              <div class="grant-role">Strategy Development Consultant</div>
+              <div class="grant-title">Sustainable Rice Residue Management to Reduce Air Pollution</div>
+              <div class="grant-meta">World Wide Fund for Nature (WWF) Pakistan — 2019</div>
+            </li>
+            <li>
+              <div class="grant-role">Strategy Development Consultant</div>
+              <div class="grant-title">Rice Straw Value Addition: Sustainable Residue Supply Chain</div>
+              <div class="grant-meta">World Wide Fund for Nature (WWF) Pakistan — 2020</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Supervision -->
+  <section class="section section-alt" id="students">
+    <div class="container">
+      <div class="two-col">
+        <div class="section-label-col">
+          <span class="section-label">Mentorship</span>
+        </div>
+        <div class="section-content-col">
+          <h2 class="section-heading">Student Supervision</h2>
+          <p class="lead-text">HEC-approved PhD supervisor since 2007, Prof. Pasha has mentored generations of food scientists across Pakistan and internationally.</p>
+
+          <div class="supervision-visual">
+            <div class="sv-card">
+              <div class="sv-header">
+                <div class="sv-degree">PhD — Food Technology / Human Nutrition</div>
+              </div>
+              <div class="sv-body">
+                <div class="sv-stat">
+                  <span class="sv-num">20</span>
+                  <span class="sv-label">Produced</span>
+                </div>
+                <div class="sv-divider"></div>
+                <div class="sv-stat">
+                  <span class="sv-num">10</span>
+                  <span class="sv-label">In Progress</span>
+                </div>
+              </div>
+            </div>
+            <div class="sv-card">
+              <div class="sv-header">
+                <div class="sv-degree">PhD — Co-Supervisor</div>
+              </div>
+              <div class="sv-body">
+                <div class="sv-stat">
+                  <span class="sv-num">19</span>
+                  <span class="sv-label">Produced</span>
+                </div>
+                <div class="sv-divider"></div>
+                <div class="sv-stat">
+                  <span class="sv-num">09</span>
+                  <span class="sv-label">In Progress</span>
+                </div>
+              </div>
+            </div>
+            <div class="sv-card">
+              <div class="sv-header">
+                <div class="sv-degree">M.Sc. (Hons.) — Food Technology &amp; Human Nutrition</div>
+              </div>
+              <div class="sv-body">
+                <div class="sv-stat">
+                  <span class="sv-num">200</span>
+                  <span class="sv-label">Supervised</span>
+                </div>
+                <div class="sv-divider"></div>
+                <div class="sv-stat">
+                  <span class="sv-num">260</span>
+                  <span class="sv-label">Co-Supervised</span>
+                </div>
+                <div class="sv-divider"></div>
+                <div class="sv-stat">
+                  <span class="sv-num">20</span>
+                  <span class="sv-label">In Progress</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="student-grid" style="margin-top:2rem;">
+            <div class="student-card">
+              <div class="sc-degree">PhD Students Supervised (Total)</div>
+              <div class="sc-main"><strong>39</strong></div>
+              <div class="sc-sub">Produced &amp; In Progress (Primary + Co-supervised)</div>
+            </div>
+            <div class="student-card">
+              <div class="sc-degree">M.Sc. Students Supervised (Total)</div>
+              <div class="sc-main"><strong>480+</strong></div>
+              <div class="sc-sub">Supervised + Co-supervised, spanning 22 years</div>
+            </div>
+            <div class="student-card">
+              <div class="sc-degree">HEC PhD Supervisor Status</div>
+              <div class="sc-main"><strong>2007 –</strong></div>
+              <div class="sc-sub">Continuously approved by Higher Education Commission, Pakistan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="footer-name">Prof. Dr. Imran Pasha</p>
+        <p class="footer-dept">Dean, Faculty of Food, Nutrition &amp; Home Sciences<br/>University of Agriculture, Faisalabad — Pakistan</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Pages</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About &amp; CV</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="grants.html">Grants &amp; Students</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">On This Page</p>
+        <ul class="footer-links">
+          <li><a href="#students">Student Supervision</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Connect</p>
+        <ul class="footer-links">
+          <li><a href="mailto:ipasha2001@uaf.edu.pk">ipasha2001@uaf.edu.pk</a></li>
+          <li><a href="https://orcid.org/0000-0001-7106-8860" target="_blank" rel="noopener">ORCID Profile</a></li>
+          <li><a href="contact.html">Send a Message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 Prof. Dr. Imran Pasha. University of Agriculture, Faisalabad.</p>
+      <div class="footer-ids">
+        <a href="https://orcid.org/0000-0001-7106-8860" target="_blank" rel="noopener">ORCID 0000-0001-7106-8860</a>
+        <span class="footer-copy">WoS: AAA-5186-2019</span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+  <script src="main.js"></script>
+</body>
+</html>

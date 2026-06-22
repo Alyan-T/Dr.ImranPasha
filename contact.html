@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Prof. Dr. Imran Pasha</title>
+  <meta name="description" content="Contact Prof. Dr. Imran Pasha — email, office phone, ORCID, institutional address, and direct message form." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    @media (max-width: 768px) {
+      .contact-split { grid-template-columns: 1fr; gap: 2.5rem; }
+    }
+    .contact-info-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 4px;
+      padding: 2rem;
+    }
+    .ci-block { margin-bottom: 1.75rem; padding-bottom: 1.75rem; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .ci-block:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+    .map-placeholder {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 4px;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      margin-top: 1.5rem;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.85rem;
+    }
+    .map-placeholder strong { display: block; font-size: 0.9rem; color: rgba(255,255,255,0.6); margin-bottom: 0.4rem; }
+    .map-iframe-wrap {
+      margin-top: 1.5rem;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .map-iframe-wrap iframe { width: 100%; height: 240px; display: block; filter: grayscale(30%) brightness(0.85); border: 0; }
+
+    .faq-list { list-style: none; margin-top: 1rem; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-q {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 0;
+      cursor: pointer;
+      font-weight: 500;
+      color: var(--navy);
+      font-size: 0.925rem;
+      gap: 1rem;
+      user-select: none;
+    }
+    .faq-q span:last-child {
+      color: var(--crimson); font-size: 1.2rem; flex-shrink: 0; transition: transform 0.2s;
+    }
+    .faq-q.open span:last-child { transform: rotate(45deg); }
+    .faq-a {
+      display: none;
+      padding-bottom: 1rem;
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+    .faq-a.open { display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Prof. Dr. Imran Pasha</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="grants.html">Grants</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="breadcrumb-inner">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="breadcrumb-current">Contact</span>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <span class="page-hero-eyebrow">Get in Touch</span>
+      <h1>Contact</h1>
+      <div class="page-hero-divider"></div>
+      <p>Reach out for research collaborations, media enquiries, student admissions, or any professional correspondence.</p>
+    </div>
+  </div>
+
+  <!-- Contact main section -->
+  <section class="section section-contact">
+    <div class="container">
+      <div class="two-col">
+        <div class="section-label-col">
+          <span class="section-label text-gold">Contact</span>
+        </div>
+        <div class="section-content-col">
+          <div class="contact-split">
+            <!-- Left: Info -->
+            <div>
+              <h2 class="section-heading text-white">Contact Details</h2>
+              <div class="contact-info-card">
+                <div class="ci-block">
+                  <div class="ci-label">Email</div>
+                  <div class="ci-value"><a href="mailto:ipasha2001@uaf.edu.pk">ipasha2001@uaf.edu.pk</a></div>
+                </div>
+                <div class="ci-block">
+                  <div class="ci-label">Office Phone</div>
+                  <div class="ci-value">+92 41 9201105 &nbsp;/&nbsp; +92 41 9200161<br/>Ext. 3044, 3040</div>
+                </div>
+                <div class="ci-block">
+                  <div class="ci-label">ORCID</div>
+                  <div class="ci-value">
+                    <a href="https://orcid.org/0000-0001-7106-8860" target="_blank" rel="noopener">0000-0001-7106-8860</a>
+                  </div>
+                </div>
+                <div class="ci-block">
+                  <div class="ci-label">Web of Science Researcher ID</div>
+                  <div class="ci-value">AAA-5186-2019</div>
+                </div>
+                <div class="ci-block">
+                  <div class="ci-label">Institution</div>
+                  <div class="ci-value">
+                    Faculty of Food, Nutrition &amp; Home Sciences<br/>
+                    National Institute of Food Science &amp; Technology<br/>
+                    University of Agriculture, Faisalabad — Pakistan
+                  </div>
+                </div>
+              </div>
+
+              <!-- Embedded map -->
+              <div class="map-iframe-wrap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.003697988889!2d73.07126631510684!3d31.42921298139245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3922699de7ab5a19%3A0xd4a9a57d1aa36eed!2sUniversity%20of%20Agriculture%2C%20Faisalabad!5e0!3m2!1sen!2s!4v1635000000000!5m2!1sen!2s"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="University of Agriculture Faisalabad on Google Maps"
+                ></iframe>
+              </div>
+            </div>
+
+            <!-- Right: Message form -->
+            <div>
+              <h2 class="section-heading text-white">Send a Message</h2>
+              <p style="color:rgba(255,255,255,0.5);font-size:0.875rem;margin-bottom:1.5rem;line-height:1.7;">For research collaborations, speaking invitations, student supervision enquiries, or general correspondence, use the form below.</p>
+              <form id="contact-form" class="contact-form" action="https://formsubmit.co/ipasha2001@yahoo.com" method="POST">
+                <!-- FormSubmit configuration -->
+                <input type="hidden" name="_subject" value="New message from your website" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_next" value="" id="form-redirect" />
+                <input type="text" name="_honey" style="display:none" />
+                <input type="hidden" name="_template" value="table" />
+
+                <div class="form-2col">
+                  <div class="form-group">
+                    <label for="f-name">Full Name</label>
+                    <input type="text" id="f-name" name="name" placeholder="Dr. Jane Smith" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="f-email">Email Address</label>
+                    <input type="email" id="f-email" name="email" placeholder="jane@university.edu" required />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="f-affil">Affiliation / Institution</label>
+                  <input type="text" id="f-affil" name="affiliation" placeholder="University / Organization" />
+                </div>
+                <div class="form-group">
+                  <label for="f-subject">Subject</label>
+                  <select id="f-subject" name="subject" style="background-color:grey">
+                    <option value="">— Select enquiry type —</option>
+                    <option>Research Collaboration</option>
+                    <option>PhD Supervision Enquiry</option>
+                    <option>Speaking / Conference Invitation</option>
+                    <option>Media &amp; Press</option>
+                    <option>Grant / Funding Enquiry</option>
+                    <option>General Correspondence</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="f-msg">Message</label>
+                  <textarea id="f-msg" name="message" placeholder="Your message here…" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="two-col">
+        <div class="section-label-col">
+          <span class="section-label">FAQ</span>
+        </div>
+        <div class="section-content-col">
+          <h2 class="section-heading">Frequently Asked Questions</h2>
+          <ul class="faq-list" id="faq">
+            <li class="faq-item">
+              <div class="faq-q"><span>How can I apply for PhD supervision under Prof. Pasha?</span><span>+</span></div>
+              <div class="faq-a">Prospective PhD students should contact the National Institute of Food Science &amp; Technology (NIFSAT) at UAF directly for admissions, and send a research statement and CV to ipasha2001@uaf.edu.pk.</div>
+            </li>
+            <li class="faq-item">
+              <div class="faq-q"><span>Is Prof. Pasha available for international research collaborations?</span><span>+</span></div>
+              <div class="faq-a">Yes. Prof. Pasha actively pursues international collaborative research. Please use the contact form above with "Research Collaboration" selected, and briefly describe your proposed project and institution.</div>
+            </li>
+            <li class="faq-item">
+              <div class="faq-q"><span>How can I request a copy of a specific publication?</span><span>+</span></div>
+              <div class="faq-a">Send an email with the title and journal reference to ipasha2001@uaf.edu.pk. Author copies of publications are shared subject to publisher copyright agreements.</div>
+            </li>
+            <li class="faq-item">
+              <div class="faq-q"><span>Where can I find Prof. Pasha's ORCID or Web of Science profile?</span><span>+</span></div>
+              <div class="faq-a">ORCID: <a href="https://orcid.org/0000-0001-7106-8860" target="_blank" rel="noopener">0000-0001-7106-8860</a>. Web of Science Researcher ID: AAA-5186-2019. Both are also listed in the contact details above.</div>
+            </li>
+            <li class="faq-item">
+              <div class="faq-q"><span>Can Prof. Pasha be invited as a keynote or conference speaker?</span><span>+</span></div>
+              <div class="faq-a">Yes. For speaking engagements, please send a formal invitation to ipasha2001@uaf.edu.pk with event details including dates, venue, topic, and expected audience. Use "Speaking / Conference Invitation" in the contact form above.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="footer-name">Prof. Dr. Imran Pasha</p>
+        <p class="footer-dept">Dean, Faculty of Food, Nutrition &amp; Home Sciences<br/>University of Agriculture, Faisalabad — Pakistan</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Pages</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About &amp; CV</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="grants.html">Grants &amp; Students</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Direct Contact</p>
+        <ul class="footer-links">
+          <li><a href="mailto:ipasha2001@uaf.edu.pk">ipasha2001@uaf.edu.pk</a></li>
+          <li><a href="tel:+924192011105">+92 41 9201105</a></li>
+          <li><a href="https://orcid.org/0000-0001-7106-8860" target="_blank" rel="noopener">ORCID Profile</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Quick Actions</p>
+        <ul class="footer-links">
+          <li><a href="#" onclick="document.getElementById('f-subject').value='Research Collaboration';document.getElementById('f-msg').focus();return false;">Research Collaboration</a></li>
+          <li><a href="#" onclick="document.getElementById('f-subject').value='PhD Supervision Enquiry';document.getElementById('f-msg').focus();return false;">PhD Enquiry</a></li>
+          <li><a href="#" onclick="document.getElementById('f-subject').value='Speaking / Conference Invitation';document.getElementById('f-msg').focus();return false;">Speaking Invitation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 Prof. Dr. Imran Pasha. University of Agriculture, Faisalabad.</p>
+      <div class="footer-ids">
+        <a href="https://orcid.org/0000-0001-7106-8860" target="_blank" rel="noopener">ORCID 0000-0001-7106-8860</a>
+        <span class="footer-copy">WoS: AAA-5186-2019</span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+  <script src="main.js"></script>
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const isOpen = answer.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
+        document.querySelectorAll('.faq-q').forEach(b => b.classList.remove('open'));
+        // Open clicked if was closed
+        if (!isOpen) {
+          answer.classList.add('open');
+          btn.classList.add('open');
+        }
+      });
+    });
+
+    // Set the FormSubmit redirect back to this page after submission
+    const redirectField = document.getElementById('form-redirect');
+    if (redirectField) {
+      redirectField.value = window.location.href;
+    }
+  </script>
+</body>
+</html>

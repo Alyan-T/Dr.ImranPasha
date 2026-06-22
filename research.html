@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — Prof. Dr. Imran Pasha</title>
+  <meta name="description" content="Research domains, expertise, and analytical methodologies of Prof. Dr. Imran Pasha — grain science, food safety, functional foods, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .method-pill {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 1rem 1.25rem;
+      font-size: 0.875rem;
+      color: var(--navy);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .method-pill::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+    .collab-list { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1rem; }
+    .collab-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.75rem 1rem;
+      padding: 0.85rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      align-items: center;
+      font-size: 0.875rem;
+      transition: border-color 0.2s;
+    }
+    .collab-item:hover { border-color: var(--navy); }
+    .collab-flag { font-size: 1.5rem; line-height: 1; }
+    .collab-name { font-weight: 600; color: var(--navy); font-size: 0.9rem; }
+    .collab-dept { font-size: 0.8rem; color: var(--muted); margin-top: 0.1rem; }
+    .impact-banner {
+      background: var(--navy);
+      border-radius: 4px;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+    .ib-num {
+      display: block;
+      font-family: var(--ff-head);
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .ib-label {
+      display: block;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      margin-top: 0.4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Prof. Dr. Imran Pasha</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="grants.html">Grants</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="breadcrumb-inner">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="breadcrumb-current">Research</span>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <span class="page-hero-eyebrow">Domains of Expertise</span>
+      <h1>Research Focus</h1>
+      <div class="page-hero-divider"></div>
+      <p>Food science spanning grain quality, food safety, analytical method development, and functional food innovation — with global collaborative reach.</p>
+    </div>
+  </div>
+
+  <!-- Research Domains -->
+  <section class="section" id="grain">
+    <div class="container two-col">
+      <div class="section-label-col">
+        <span class="section-label">Research Focus</span>
+      </div>
+      <div class="section-content-col">
+        <h2 class="section-heading">Domains of Expertise</h2>
+        <p class="lead-text">Prof. Pasha's work spans the breadth of food and nutrition science, with particular depth in grain quality, food safety, and analytical method development.</p>
+        <div class="research-grid">
+          <div class="research-card" id="grain">
+            <div class="rc-accent"></div>
+            <h3>Grain Science</h3>
+            <p>Cereal quality &amp; characterization, wheat quality, milling and baking science, value addition of cereal brans and by-products.</p>
+          </div>
+          <div class="research-card" id="safety">
+            <div class="rc-accent"></div>
+            <h3>Food Safety &amp; Security</h3>
+            <p>Pesticide residues, heavy metals, food fortification, composite flour technology, and malnutrition mitigation strategies.</p>
+          </div>
+          <div class="research-card" id="analytical">
+            <div class="rc-accent"></div>
+            <h3>Analytical Techniques</h3>
+            <p>Chromatography (GC-MS, HPLC), spectroscopy (FTIR, atomic absorption &amp; emission), and electrophoresis (SDS-PAGE).</p>
+          </div>
+          <div class="research-card" id="functional">
+            <div class="rc-accent"></div>
+            <h3>Functional Foods &amp; Nutraceuticals</h3>
+            <p>Development of bioactive-enriched products, oleoresin characterization, and plant-based food innovation.</p>
+          </div>
+          <div class="research-card">
+            <div class="rc-accent"></div>
+            <h3>Human Nutrition</h3>
+            <p>Dietary pattern assessment, school-age nutrition programs, malnutrition prevention, and micronutrient fortification strategies.</p>
+          </div>
+          <div class="research-card">
+            <div class="rc-accent"></div>
+            <h3>Food Technology &amp; Processing</h3>
+            <p>Hurdle technology, preservation techniques, bioactive films, composite flour development, and sustainable food processing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Numbers -->
+  <section class="section section-alt">
+    <div class="container two-col">
+      <div class="section-label-col">
+        <span class="section-label">Impact</span>
+      </div>
+      <div class="section-content-col">
+        <h2 class="section-heading">Research Impact</h2>
+        <p class="lead-text">Two decades of continuous publication output with consistently high journal impact factors across international and HEC-recognized journals.</p>
+        <div class="impact-banner">
+          <div>
+            <span class="ib-num">562<sup style="font-size:0.55em">+</sup></span>
+            <span class="ib-label">Cumulative Impact Factor</span>
+          </div>
+          <div>
+            <span class="ib-num">181</span>
+            <span class="ib-label">Total Publications</span>
+          </div>
+          <div>
+            <span class="ib-num">120</span>
+            <span class="ib-label">HEC International Journals</span>
+          </div>
+          <div>
+            <span class="ib-num">20.38</span>
+            <span class="ib-label">Highest Single IF</span>
+          </div>
+          <div>
+            <span class="ib-num">253</span>
+            <span class="ib-label">Conference Abstracts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analytical Methods -->
+  <section class="section">
+    <div class="container two-col">
+      <div class="section-label-col">
+        <span class="section-label">Methods</span>
+      </div>
+      <div class="section-content-col">
+        <h2 class="section-heading">Analytical Toolkit</h2>
+        <p class="lead-text">A rigorous multi-technique approach combining chromatographic, spectroscopic, and electrophoretic methods for precise food composition and contaminant analysis.</p>
+        <h3 class="sub-heading">Chromatography</h3>
+        <div class="method-grid">
+          <div class="method-pill">GC-MS (Gas Chromatography–Mass Spectrometry)</div>
+          <div class="method-pill">HPLC (High-Performance Liquid Chromatography)</div>
+          <div class="method-pill">Thin Layer Chromatography (TLC)</div>
+        </div>
+
+        <h3 class="sub-heading">Spectroscopy</h3>
+        <div class="method-grid">
+          <div class="method-pill">FTIR Spectroscopy</div>
+          <div class="method-pill">Atomic Absorption Spectroscopy</div>
+          <div class="method-pill">Atomic Emission Spectroscopy</div>
+          <div class="method-pill">UV-Vis Spectrophotometry</div>
+        </div>
+
+        <h3 class="sub-heading">Electrophoresis &amp; Biosensors</h3>
+        <div class="method-grid">
+          <div class="method-pill">SDS-PAGE Electrophoresis</div>
+          <div class="method-pill">Aptamer-based Biosensors</div>
+          <div class="method-pill">Gold Nanocluster Optical Sensors</div>
+          <div class="method-pill">SERS Aptasensors</div>
+        </div>
+
+        <h3 class="sub-heading">Emerging Technologies</h3>
+        <div class="method-grid">
+          <div class="method-pill">Nanobubble Technology</div>
+          <div class="method-pill">Polysaccharide-Based Films</div>
+          <div class="method-pill">Smart Hurdle Technology</div>
+          <div class="method-pill">Bioactive Encapsulation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collaborations -->
+  <section class="section section-alt">
+    <div class="container two-col">
+      <div class="section-label-col">
+        <span class="section-label">Collaborations</span>
+      </div>
+      <div class="section-content-col">
+        <h2 class="section-heading">International Collaborations</h2>
+        <p class="lead-text">Active research partnerships with universities and institutions across Asia, Oceania, Europe, and North America.</p>
+        <ul class="collab-list">
+          <li class="collab-item">
+            <span class="collab-flag">🇰🇷</span>
+            <div>
+              <div class="collab-name">Chungnam National University</div>
+              <div class="collab-dept">South Korea — Nutritional profiling &amp; proteomics of mammalian milk</div>
+            </div>
+          </li>
+          <li class="collab-item">
+            <span class="collab-flag">🇺🇸</span>
+            <div>
+              <div class="collab-name">USDA Western Wheat Quality Lab / Washington State University</div>
+              <div class="collab-dept">Pullman, USA — Post-doctoral research in wheat quality</div>
+            </div>
+          </li>
+          <li class="collab-item">
+            <span class="collab-flag">🇦🇺</span>
+            <div>
+              <div class="collab-name">Curtin University</div>
+              <div class="collab-dept">Perth, Australia — Legume quality, Endeavour Fellowship</div>
+            </div>
+          </li>
+          <li class="collab-item">
+            <span class="collab-flag">🇨🇦</span>
+            <div>
+              <div class="collab-name">Nutrition International</div>
+              <div class="collab-dept">Ottawa, Canada — Wheat flour fortification situation analysis</div>
+            </div>
+          </li>
+          <li class="collab-item">
+            <span class="collab-flag">🇦🇺</span>
+            <div>
+              <div class="collab-name">ACIAR (Australian Centre for International Agricultural Research)</div>
+              <div class="collab-dept">Hybrid wheat breeding across Bangladesh, Ethiopia &amp; Pakistan</div>
+            </div>
+          </li>
+          <li class="collab-item">
+            <span class="collab-flag">🇩🇰</span>
+            <div>
+              <div class="collab-name">University of Copenhagen</div>
+              <div class="collab-dept">Denmark — Workshop on food science methods, 2015</div>
+            </div>
+          </li>
+          <li class="collab-item">
+            <span class="collab-flag">🇮🇹</span>
+            <div>
+              <div class="collab-name">University of Milan / Bergamo</div>
+              <div class="collab-dept">Italy — Food science workshop, 2016</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="footer-name">Prof. Dr. Imran Pasha</p>
+        <p class="footer-dept">Dean, Faculty of Food, Nutrition &amp; Home Sciences<br/>University of Agriculture, Faisalabad — Pakistan</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Pages</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About &amp; CV</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="grants.html">Grants &amp; Students</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Research Areas</p>
+        <ul class="footer-links">
+          <li><a href="#grain">Grain Science</a></li>
+          <li><a href="#safety">Food Safety</a></li>
+          <li><a href="#analytical">Analytical Methods</a></li>
+          <li><a href="#functional">Functional Foods</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Connect</p>
+        <ul class="footer-links">
+          <li><a href="mailto:ipasha2001@uaf.edu.pk">ipasha2001@uaf.edu.pk</a></li>
+          <li><a href="https://orcid.org/0000-0001-7106-8860" target="_blank" rel="noopener">ORCID Profile</a></li>
+          <li><a href="contact.html">Send a Message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 Prof. Dr. Imran Pasha. University of Agriculture, Faisalabad.</p>
+      <div class="footer-ids">
+        <a href="https://orcid.org/0000-0001-7106-8860" target="_blank" rel="noopener">ORCID 0000-0001-7106-8860</a>
+        <span class="footer-copy">WoS: AAA-5186-2019</span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+  <script src="main.js"></script>
+</body>
+</html>
