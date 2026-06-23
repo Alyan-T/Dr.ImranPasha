@@ -60,6 +60,7 @@
     .sv-label { font-size: 0.72rem; color: var(--muted); margin-top: 0.25rem; }
     .sv-divider { width: 1px; background: var(--border); align-self: stretch; }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
 
@@ -71,11 +72,14 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="research.html">Research</a></li>
+        <li><a href="international-collaborations.html">Collaborations</a></li>
         <li><a href="publications.html">Publications</a></li>
+        <li><a href="patents-trademarks.html">Patents &amp; TM</a></li>
         <li><a href="grants.html">Grants</a></li>
+        <li><a href="consultancy-policy.html">Consultancy</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     </div>
   </nav>
 
@@ -83,7 +87,7 @@
   <div class="breadcrumb">
     <div class="breadcrumb-inner">
       <a href="index.html">Home</a>
-      <span class="breadcrumb-sep">›</span>
+      <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right" style="font-size: 0.7em;"></i></span>
       <span class="breadcrumb-current">Grants &amp; Students</span>
     </div>
   </div>
@@ -127,87 +131,6 @@
     </div>
   </section>
 
-  <!-- Completed Grants -->
-  <section class="section">
-    <div class="container">
-      <div class="two-col">
-        <div class="section-label-col">
-          <span class="section-label">Completed</span>
-        </div>
-        <div class="section-content-col">
-          <h2 class="section-heading">Completed Grants</h2>
-
-          <!-- Filter tabs -->
-          <div class="filter-tabs">
-            <button class="filter-tab active" data-filter="all">All Roles</button>
-            <button class="filter-tab" data-filter="pi">Principal Investigator</button>
-            <button class="filter-tab" data-filter="copi">Co-PI</button>
-            <button class="filter-tab" data-filter="pm">Project Manager</button>
-          </div>
-
-          <ul class="grant-list">
-            <li data-category="pi">
-              <div class="grant-role">
-                <span class="grant-tag tag-pi">PI</span> Principal Investigator
-              </div>
-              <div class="grant-title">Commercialization of Specialty Multigrain Flour (MaxGrain®) for baked products utilizing indigenous cereals</div>
-              <div class="grant-meta">HEC-TTSF 2020 — Rs. 10.93 million</div>
-            </li>
-            <li data-category="pi">
-              <div class="grant-role">
-                <span class="grant-tag tag-pi">PI</span> Principal Investigator
-              </div>
-              <div class="grant-title">Linking nutrition to cereal brans: production and commercialization of modified bran flours</div>
-              <div class="grant-meta">HEC TDF — Rs. 8.351 million &nbsp;|&nbsp; 2018–2020</div>
-            </li>
-            <li data-category="pm">
-              <div class="grant-role">
-                <span class="grant-tag tag-pm">PM</span> Project Manager
-              </div>
-              <div class="grant-title">Composite flour technology: a step towards managing malnutrition and food security in Pakistan</div>
-              <div class="grant-meta">PARB Lahore — Rs. 6.1784 million &nbsp;|&nbsp; 2017–2019</div>
-            </li>
-            <li data-category="pm">
-              <div class="grant-role">
-                <span class="grant-tag tag-member">Member</span> Team Member
-              </div>
-              <div class="grant-title">Situation analysis of large-scale wheat flour, edible oil &amp; ghee fortification</div>
-              <div class="grant-meta">Nutrition International, Ottawa, Canada — Rs. 7.9326 million &nbsp;|&nbsp; 2014</div>
-            </li>
-            <li data-category="copi">
-              <div class="grant-role">
-                <span class="grant-tag tag-copi">Co-PI</span> Co-Principal Investigator
-              </div>
-              <div class="grant-title">Accelerating genetic gain in wheat through hybrid breeding in Bangladesh, Ethiopia and Pakistan</div>
-              <div class="grant-meta">ACIAR — USD 1.9 million &nbsp;|&nbsp; 2022–2026</div>
-            </li>
-            <li data-category="pm">
-              <div class="grant-role">
-                <span class="grant-tag tag-pm">PM</span> Project Manager
-              </div>
-              <div class="grant-title">Documenting and mitigating the impact of pesticides and heavy metal residues on vegetables</div>
-              <div class="grant-meta">PARB Lahore — Rs. 9.021 million &nbsp;|&nbsp; 2011–2016</div>
-            </li>
-            <li data-category="pi">
-              <div class="grant-role">
-                <span class="grant-tag tag-pi">PI</span> Principal Investigator
-              </div>
-              <div class="grant-title">Development of nutritionally enhanced multigrain products using fortified wheat flour composites</div>
-              <div class="grant-meta">HEC National Research Program — Rs. 5.4 million &nbsp;|&nbsp; 2015–2018</div>
-            </li>
-            <li data-category="pi">
-              <div class="grant-role">
-                <span class="grant-tag tag-pi">PI</span> Principal Investigator
-              </div>
-              <div class="grant-title">Value addition of rice and wheat bran through extrusion and fermentation</div>
-              <div class="grant-meta">PARB Lahore — Rs. 4.8 million &nbsp;|&nbsp; 2013–2016</div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- In-Progress Grants -->
   <section class="section section-alt">
     <div class="container">
@@ -218,66 +141,47 @@
         <div class="section-content-col">
           <h2 class="section-heading">Current Grants</h2>
           <ul class="grant-list">
-            <li>
+            <li data-category="pm">
               <div class="grant-role">
-                <span class="grant-tag tag-pi">PI</span>
-                <span class="grant-tag tag-progress">Active</span> Principal Investigator
+                <span class="grant-tag tag-progress">Active</span> Grant
               </div>
-              <div class="grant-title">Nutritional profiling of milk from different mammalian species with reference to proteomics and genomic studies</div>
-              <div class="grant-meta">International Collaboration — Chungnam National University, Korea — USD 30,000 &nbsp;|&nbsp; 2023–2025</div>
+              <div class="grant-title">Project Manager. 2025. "Review & integrate Basic Safety and Quality Parameters into Edible Oil and WFF Training Manuals". Nutrition International. (1.8 million PKR).</div>
+              <div class="grant-meta">2025</div>
             </li>
-            <li>
+            <li data-category="pi">
               <div class="grant-role">
-                <span class="grant-tag tag-copi">Co-PI</span>
-                <span class="grant-tag tag-progress">Active</span> Co-Principal Investigator
+                <span class="grant-tag tag-progress">Active</span> Grant
               </div>
-              <div class="grant-title">Development of a Novel Excipient Using Green Banana for Sustainable Production of Nutraceuticals</div>
-              <div class="grant-meta">HEC TDF — Rs. 9.18 million &nbsp;|&nbsp; 2025–2027</div>
+              <div class="grant-title">Principal Investigator. 2023-2025. “Nutritional profiling of milk from different mammalian species of Pakistan with special reference to proteomics and genomic studies”. International collaborative project with Chungnam National University, South Korea. (30,000/- USD)</div>
+              <div class="grant-meta">2023</div>
             </li>
-            <li>
+            <li data-category="copi">
               <div class="grant-role">
-                <span class="grant-tag tag-pm">PM</span>
-                <span class="grant-tag tag-progress">Active</span> Project Manager
+                <span class="grant-tag tag-progress">Active</span> Grant
               </div>
-              <div class="grant-title">Mapping the Farm and Market Level Footprint of Zinc Wheat in Punjab, Pakistan</div>
-              <div class="grant-meta">Global Affairs Canada (GAS/IFPR) — Rs. 2.4064 million &nbsp;|&nbsp; 2024</div>
+              <div class="grant-title">Co-Principal Investigator. 2023. “Local Nutrutionist Training”. International collaborative project with Chungnam National University, South Korea. (250,000/- USD)</div>
+              <div class="grant-meta">2023</div>
             </li>
-          </ul>
+            <li data-category="pm">
+              <div class="grant-role">
+                <span class="grant-tag tag-progress">Active</span> Grant
+              </div>
+              <div class="grant-title">Project Manager. 2024. “Mapping the Farm and Market Level FootPrint of Zinc Wheat in Punjab, Pakistan funded by Global Affairs Canada (GAS/IFPR). (2.4064 million)</div>
+              <div class="grant-meta">2024</div>
+            </li>
+            <li data-category="copi">
+              <div class="grant-role">
+                <span class="grant-tag tag-progress">Active</span> Grant
+              </div>
+              <div class="grant-title">Co-Principal Investigator. 2025-2027. “Development of a Novel Excipient Using Green Banana for Sustainable Production of Nutraceuticals”. Higher Education Commission, Islamabad under TDF (Rs. 9.18 million)</div>
+              <div class="grant-meta">2025</div>
+            </li>
+</ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Consultancy -->
-  <section class="section">
-    <div class="container">
-      <div class="two-col">
-        <div class="section-label-col">
-          <span class="section-label">Consultancy</span>
-        </div>
-        <div class="section-content-col">
-          <h2 class="section-heading">Consultancy &amp; Policy</h2>
-          <ul class="grant-list">
-            <li>
-              <div class="grant-role">Policy Development Consultant</div>
-              <div class="grant-title">Punjab Fortification Strategy and Policy</div>
-              <div class="grant-meta">Provincial Fortification Alliance, Punjab Food Department — Launched June 27, 2018</div>
-            </li>
-            <li>
-              <div class="grant-role">Strategy Development Consultant</div>
-              <div class="grant-title">Sustainable Rice Residue Management to Reduce Air Pollution</div>
-              <div class="grant-meta">World Wide Fund for Nature (WWF) Pakistan — 2019</div>
-            </li>
-            <li>
-              <div class="grant-role">Strategy Development Consultant</div>
-              <div class="grant-title">Rice Straw Value Addition: Sustainable Residue Supply Chain</div>
-              <div class="grant-meta">World Wide Fund for Nature (WWF) Pakistan — 2020</div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Student Supervision -->
   <section class="section section-alt" id="students">
@@ -368,6 +272,185 @@
     </div>
   </section>
 
+  <!-- Completed Grants -->
+  <section class="section">
+    <div class="container">
+      <div class="two-col">
+        <div class="section-label-col">
+          <span class="section-label">Completed</span>
+        </div>
+        <div class="section-content-col">
+          <h2 class="section-heading">Completed Grants</h2>
+
+          <!-- Filter tabs -->
+          <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="all">All Roles</button>
+            <button class="filter-tab" data-filter="pi">Principal Investigator</button>
+            <button class="filter-tab" data-filter="copi">Co-PI</button>
+            <button class="filter-tab" data-filter="pm">Project Manager</button>
+          </div>
+
+          <ul class="grant-list">
+            <li data-category="all">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Team leader -1(Food Safety) “Pesticide and Safe Food” And “Gender Focused Rural Advisory Services” at University of Agriculture, Faisalabad-Pakistan.</div>
+              <div class="grant-meta"></div>
+            </li>
+            <li data-category="pi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Principal Investigator. 2025. “Commercialization of Specialty Multigrain Flour (MaxGrain®) developed for intended baked products utilizing indigenous cereals; A step to improve nutritional status of the masses”.HEC-TTSF 2020 program. (Rs. 10.93 million).</div>
+              <div class="grant-meta">2025</div>
+            </li>
+            <li data-category="pi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Principal Investigator. 2012-16. “Functional exploration of Millet and Sorghum: An advancement towards food security”. Funded by Higher Education Commission, Pakistan (Rs. 1.69 million).</div>
+              <div class="grant-meta">2012</div>
+            </li>
+            <li data-category="pi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Principal Investigator. 2015-18. “Functional exploration of wheat straw- an approach towards value addition”. Higher Education Commission, Islamabad. (Rs.2.356 million).</div>
+              <div class="grant-meta">2015</div>
+            </li>
+            <li data-category="pm">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Project Manager. 2017-2019. “Composite flour technology; A step towards managing malnutrition and food security in Pakistan”.Punjab Agricultural Research Board (PARB) Lahore, Pakistan (Rs. 6.1784 million)</div>
+              <div class="grant-meta">2017</div>
+            </li>
+            <li data-category="pi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Principal Investigator. 2018-2020. “Linking nutrition to cereal brans: production and commercialization of modified bran flours” Higher Education Commission, Islamabad under TDF (Rs. 8.351 million)</div>
+              <div class="grant-meta">2018</div>
+            </li>
+            <li data-category="pi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Principal Investigator. 2017-19. “Application of Fourier transform infrared spectroscopy to monitor wheat flour aging process using chemometrics” Funded by Higher Education Commission, Pakistan (Rs.0.50 million). (PI change vide ORIC No. 5041 dated 18.09.2018)</div>
+              <div class="grant-meta">2017</div>
+            </li>
+            <li data-category="pm">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Project Manager. 2011-16. “Documenting and mitigating the impact of pesticides and heavy metal residues on vegetables”. Funded by Punjab Agricultural Research Board (PARB) Lahore, Pakistan (Total cost 19.50 million, our component Rs. 9.021 million) (PM change vide PARB No. P-141/2898 dated 22-12-2015).</div>
+              <div class="grant-meta">2011</div>
+            </li>
+            <li data-category="copi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Co-Principal Investigator. 2015-16. “Quality assurance/quality control situation of flour mills in Punjab province with special reference to wheat flour fortification”. Sponsored by Global Alliance for Improved Nutrition (GAIN). Major components of project include review of literature, assessment of flour mills, training to mill staff, Preparation of manual (English and Urdu) for flour mills and regulatory bodies. (Rs. 3.80 million)</div>
+              <div class="grant-meta">2015</div>
+            </li>
+            <li data-category="copi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Co-Principal Investigator. 2013. “Production of flavor and antioxidants by Maillard reaction”. Funded by Higher Education Commission, Pakistan (Rs. 3.50 million). (Co-PI designated vide Director Research No. 2621 dated 13.08.2009)</div>
+              <div class="grant-meta">2013</div>
+            </li>
+            <li data-category="copi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Co-Principal Investigator. 2010. “Strengthening of research facilities of food and flavor chemistry/ antioxidants laboratory”. 2008-2010. Higher Education Commission, Pakistan (Rs. 1.00 million). (Co-PI change vide Director Research No. 2620 dated 13.08.2009)</div>
+              <div class="grant-meta">2010</div>
+            </li>
+            <li data-category="copi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Co-Principal Investigator. 2007. “Characterization of wheat varieties for their suitability to the production of biscuits”. Funded by English Biscuit Manufacturers (EBM) Pvt. Ltd., Karachi-Pakistan (Rs.0.5 million).</div>
+              <div class="grant-meta">2007</div>
+            </li>
+            <li data-category="copi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Co-Principal Investigator. 2011-14. “Peril Assessment of trans fats of vender foods consumed in Faisalabad City”. Funded by Higher Education Commission, Pakistan (Rs.0.50 million).</div>
+              <div class="grant-meta">2011</div>
+            </li>
+            <li data-category="all">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Team Member. 2014. “Situation analysis of large-scale wheat flour, edible oil & ghee fortification”. Funded by Nutrition International(NI) based Ottawa, Canada. (Rs. 7.9326 million)</div>
+              <div class="grant-meta">2014</div>
+            </li>
+            <li data-category="all">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Project Coordinator. 2017. “Nutritional Awareness of School Going Children and Review of Nutrition & Food Safety Curricula Practiced at Higher Educational Institutes of Pakistan”.Sponsored by Global Alliance for Improved Nutrition (GAIN). (Rs. 5.171 million)</div>
+              <div class="grant-meta">2017</div>
+            </li>
+            <li data-category="copi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Co-Principal Investigator. 2011-18. “Value addition and shelf life extension of guava by chemical treatments under modified atmosphere storage”. Funded by Higher Education Commission, Pakistan (Rs.9.126 million).</div>
+              <div class="grant-meta">2011</div>
+            </li>
+            <li data-category="pi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Principal Investigator. 2017-2018. “Composite flour technology; A step towards managing malnutrition and food security in Pakistan”. Center for Advanced Studies (CAS) UAF, Pakistan (Rs. 1.385 million).</div>
+              <div class="grant-meta">2017</div>
+            </li>
+            <li data-category="copi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Co-Principal Investigator. 2021. “Cereal based functional beverage; Development, optimization, and acceptability - An approach to introduce value-added nutritious drink in Pakistani market”. HEC-SRGP (Rs. 1.00 million).</div>
+              <div class="grant-meta">2021</div>
+            </li>
+            <li data-category="copi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Co-Principal Investigator. 2018-20. “Biochemical characterization of barley cell wall with special reference to amelioration of soluble dietary fiber; an innovative approach towards value addition”. Higher Education Commission, Pakistan. (Rs.1.228 million).</div>
+              <div class="grant-meta">2018</div>
+            </li>
+            <li data-category="copi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Co-Principal Investigator. 2015-17. “Value addition of Agro-residues for Alpha amylase production through bioconversion”. Higher Education Commission, Pakistan (Rs. 2.98 million)</div>
+              <div class="grant-meta">2015</div>
+            </li>
+            <li data-category="copi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Co-Principal Investigator. 2018-21. “Exploring the nutritional and functional properties of mango seed oil in bakery products”. Higher Education Commission, Pakistan (Rs. 2.31 million).</div>
+              <div class="grant-meta">2018</div>
+            </li>
+            <li data-category="copi">
+              <div class="grant-role">
+                <span class="grant-tag tag-pi">Completed</span> Grant
+              </div>
+              <div class="grant-title">Co-Principal Investigator. 2022-2026. “Accelerating genetic gain in wheat through hybrid breeding in Bangladesh, Ethiopia and Pakistan”. ACIAR. (Worth: 1.9 million dollar).</div>
+              <div class="grant-meta">2022</div>
+            </li>
+</ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-grid">
@@ -410,7 +493,7 @@
     </div>
   </footer>
 
-  <button id="back-to-top" aria-label="Back to top">↑</button>
+  <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
   <script src="main.js"></script>
 </body>
 </html>

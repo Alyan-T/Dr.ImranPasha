@@ -1074,15 +1074,15 @@ img { max-width: 100%; display: block; }
    ANIMATIONS
 ============================================================ */
 @media (prefers-reduced-motion: no-preference) {
-  .tl-item, .research-card, .pub-list li, .grant-list li,
+  .tl-item, .research-card,
   .student-card, .ql-card, .pub-box, .country-row:not(.header),
   .awards-list li {
     opacity: 0;
     transform: translateY(16px);
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
-  .tl-item.visible, .research-card.visible, .pub-list li.visible,
-  .grant-list li.visible, .student-card.visible, .ql-card.visible,
+  .tl-item.visible, .research-card.visible,
+  .student-card.visible, .ql-card.visible,
   .pub-box.visible, .country-row.visible, .awards-list li.visible {
     opacity: 1;
     transform: none;

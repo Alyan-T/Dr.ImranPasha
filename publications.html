@@ -9,6 +9,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<style>
+  .pub-link:hover {
+    color: var(--gold) !important;
+    text-decoration: underline !important;
+  }
+  .pub-list li {
+    cursor: pointer;
+  }
+</style>
 </head>
 <body>
 
@@ -20,11 +31,14 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="research.html">Research</a></li>
+        <li><a href="international-collaborations.html">Collaborations</a></li>
         <li><a href="publications.html">Publications</a></li>
+        <li><a href="patents-trademarks.html">Patents &amp; TM</a></li>
         <li><a href="grants.html">Grants</a></li>
+        <li><a href="consultancy-policy.html">Consultancy</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     </div>
   </nav>
 
@@ -32,7 +46,7 @@
   <div class="breadcrumb">
     <div class="breadcrumb-inner">
       <a href="index.html">Home</a>
-      <span class="breadcrumb-sep">›</span>
+      <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right" style="font-size: 0.7em;"></i></span>
       <span class="breadcrumb-current">Publications</span>
     </div>
   </div>
@@ -100,7 +114,7 @@
           <!-- Search -->
           <div class="search-bar">
             <input type="search" id="pub-search" placeholder="Search publications…" aria-label="Search publications" />
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <i class="fa-solid fa-magnifying-glass search-icon" style="position: absolute; right: 1rem; top: 1rem; color: var(--muted);"></i>
           </div>
 
           <!-- Filter tabs -->
@@ -108,100 +122,691 @@
             <button class="filter-tab active" data-filter="all">All</button>
             <button class="filter-tab" data-filter="books">Books &amp; Chapters</button>
             <button class="filter-tab" data-filter="journals">Journal Articles</button>
-            <button class="filter-tab" data-filter="patents">Patents &amp; TM</button>
           </div>
-
-          <!-- Books & Chapters -->
-          <h3 class="sub-heading">Books &amp; Book Chapters</h3>
+          <h3 class="sub-heading">Books, Chapters & Manuals</h3>
           <ul class="pub-list">
             <li data-category="books">
               <span class="pub-year">2025</span>
-              <div>Kanwal N., Tanveer M., Shehzad A. &amp; <strong>Pasha I.</strong> Neural Control of Appetite and Food Choices in the Context of Food Safety. In <em>Physiological Perspectives on Food Safety</em>. Springer Nature Switzerland. pp. 133–153.</div>
+              <div><a href="https://doi.org/10.1007/978-3-031-94582-3_4" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Kanwal, N., M. Tanveer, A. Shehzad and I. Pasha. (2025). Neural Control of Appetite and Food Choices in the Context of Food Safety. In Physiological Perspectives on Food Safety: Exploring the Intersection of Health and Nutrition (pp. 133-153). Cham: Springer Nature Switzerland.</a></div>
+            </li>
+            <li data-category="books">
+              <span class="pub-year">N/A</span>
+              <div><a href="https://doi.org/10.47278/book.hh/2025.166" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Conteh, C. K., I. Pasha, M. Subtain, H. Rasheed, H., and S. Ansar. Nutritional and Medicinal Benefits of Oats (Avena sativa).</a></div>
             </li>
             <li data-category="books">
               <span class="pub-year">2024</span>
-              <div>Saeed K., <strong>Pasha I.</strong>, Chughtai M.F.J. et al. Application of essential oils in the food industry. In <em>Applications of Essential Oils in the Food Industry</em>. Academic Press. pp. 1–8.</div>
+              <div><a href="https://scholar.google.com/scholar?q=Saeed%2C%20K.%2C%20I.%20Pasha%2C%20M.F.J.%20Chughtai%2C%20Z.%20%20Ali%2C%20H.%20Bukhari%2C%20M.%20%20Zuhair%20.%202024.%20Application%20of%20essenti" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Saeed, K., I. Pasha, M.F.J. Chughtai, Z.  Ali, H. Bukhari, M.  Zuhair . 2024. Application of essential oils in the food industry. In Applications of Essential Oils in the Food Industry (pp. 1-8). Academic Press.</a></div>
             </li>
             <li data-category="books">
               <span class="pub-year">2024</span>
-              <div>Ameer K., Murtaza M.A., Zainab S., Kim Y., Arshad M.U., <strong>Pasha I.</strong> &amp; Park M.K. Polysaccharide-Based Films: Carriers of Active Substances. In <em>Polysaccharide Based Films for Food Packaging</em>. Springer Nature Singapore. pp. 379–400.</div>
+              <div><a href="https://doi.org/10.1007/978-981-99-4898-7_15" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Ameer, K., M.A. Murtaza, S. Zainab, Y. Kim, M.U. Arshad, I. Pasha and M.K. Park. 2024. Polysaccharide-Based Films: Carriers of Active Substances and Controlled Release Characteristics. In Polysaccharide Based Films for Food Packaging: Fundamentals, Properties and Applications (pp. 379-400). Singapore: Springer Nature Singapore.</a></div>
             </li>
             <li data-category="books">
               <span class="pub-year">2020</span>
-              <div><strong>Pasha I.</strong> &amp; Ahmad F. <em>Comprehensive Methods in Food Analysis: A Practical Guide.</em> Pak TM Publishers, Faisalabad. ISBN: 978-969-7951-01-1.</div>
+              <div><a href="https://doi.org/10.59158/001c.71091" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha I.,& F. Ahmad. 2020. Comprehensive Methods in Food Analysis; A Practical Guide. Pak TM Publishers, Faisalabad. ISBN:978-969-7951-01-1</a></div>
             </li>
             <li data-category="books">
               <span class="pub-year">2018</span>
-              <div>Sharif M.K., Ejaz R. &amp; <strong>Pasha I.</strong> Nutritional and Therapeutic Potential of Spices. In <em>Therapeutic, Probiotic, and Unconventional Foods</em>. Elsevier. pp. 181–199. ISBN: 978-0-12-814625-5.</div>
+              <div><a href="https://doi.org/10.1016/b978-0-12-814625-5.00011-x" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Sharif M K, R. Ejaz&I. Pasha. 2018. Nutritional and Therapeutic Potential of Spices. In Therapeutic, Probiotic, and Unconventional Foods, Grumezescu A & AM Holban Eds.  Elsevier Inc. (ISBN 978-0-12-814625-5) pp. 181-199.</a></div>
             </li>
             <li data-category="books">
               <span class="pub-year">2017</span>
-              <div><strong>Pasha I.</strong> &amp; Shehzad A. Cereal and Cereal Products. In <em>Handbook of Food Science &amp; Technology</em>. UAF. pp. 40–83.</div>
+              <div><a href="https://doi.org/10.1201/9781420027228-51" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha I. & A. Shehzad. 2017. Cereal and Cereal Products. In: Handbook of Food Science & Technology; Zahoor T., & M.S. Butt (Editors); Khan I.A & M. Farooq (Managing Editors). University of Agriculture, Faisalabad, pp 40-83. (http://onlinebooks.uaf.edu.pk/BookDetails.aspx?BookId=11)</a></div>
+            </li>
+            <li data-category="books">
+              <span class="pub-year">2017</span>
+              <div><a href="https://doi.org/10.1590/fst.65122" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Shehzad A., I. Pasha, and S. Tanvir. 2017. Pulses and their Products. In: Handbook of Food Science & Technology; Zahoor T., & M.S. Butt (Editors); Khan I.A & M. Farooq(Managing Editors). University of Agriculture, Faisalabad, pp 85-110. (http://onlinebooks.uaf.edu.pk/BookDetails.aspx?BookId=11)</a></div>
+            </li>
+            <li data-category="books">
+              <span class="pub-year">2017</span>
+              <div><a href="https://scholar.google.com/scholar?q=Butt%20MS%2C%20I.%20Pasha%2C%20I.%20Raheem%2C%20M.I.%20Khan%2C%20M.R.%20Khan%20%26%20A.%20Shehzad.%202017." target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Butt MS, I. Pasha, I. Raheem, M.I. Khan, M.R. Khan & A. Shehzad. 2017.</a></div>
+            </li>
+            <li data-category="books">
+              <span class="pub-year">N/A</span>
+              <div><a href="https://doi.org/10.32350/mift.31.09" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">پھلوں،سبزیوں کو محفوظ کرنا اور بیکری  کی مصنوعاتPublished by University of Agriculture, Faisalabad Press.</a></div>
+            </li>
+            <li data-category="books">
+              <span class="pub-year">2018</span>
+              <div><a href="https://scholar.google.com/scholar?q=Butt%20M.S.%2CZahoor%20T.%2CI.Pasha%2C%20M.K.%20Sharif%2C%20A.%20Sameen%2C%20B.%20Israr%2C%20B.%20Asad%2C%20W.A%20Khan.2018.%20%D9%85%D8%AA%D9%88%D8%A7%D8%B2%D9%86%20%D8%BA%D8%B0%D8%A7%20%D8%A7%D9%88" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Butt M.S.,Zahoor T.,I.Pasha, M.K. Sharif, A. Sameen, B. Israr, B. Asad, W.A Khan.2018. متوازن غذا اور حفظان صحت کے اصول   Guidance Manual for Students, National Institute of Food Science and Technology, University of Agriculture, Faisalabad under project sponsored By Global Alliance for Improved Nutrition.</a></div>
+            </li>
+            <li data-category="books">
+              <span class="pub-year">2017</span>
+              <div><a href="https://doi.org/10.1079/pwkb.20167801021" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I., and I. Ahmed. 2017 Guide for District Food Controllers in کے اآٹے کی فورٹیفیکیشن، کوالٹی کنٹرول/کوالٹی ایشورنس کا طریقہ  . گندم Punjab Food Department, Government  of Punjab under the project of Global Alliance for Improved Nutrition.</a></div>
+            </li>
+            <li data-category="books">
+              <span class="pub-year">2016</span>
+              <div><a href="https://scholar.google.com/scholar?q=Butt%2C%20M.S.%2C%20I.%20Pasha%2C%20T.S.%20Awan%2C%20I.%20Ahmed%2C%20M.%20Saeed%2C%20A.%20Shahzad%2C%20A.%20Rakha%2C%20S.%20Ahmed.%202016.%20%DA%A9%DB%92%20%D8%A7%D8%A2%D9%B9%DB%92%20%DA%A9" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Butt, M.S., I. Pasha, T.S. Awan, I. Ahmed, M. Saeed, A. Shahzad, A. Rakha, S. Ahmed. 2016. کے اآٹے کی فورٹیفیکیشن، کوالٹی کنٹرول/کوالٹی ایشورنس کا طریقہ  . گندم National Institute of food Science & Technology, University of Agriculture, Faisalabad under the project of Global Alliance for Improved Nutrition.</a></div>
             </li>
           </ul>
 
-          <!-- Journal Articles -->
-          <h3 class="sub-heading">Selected Recent Journal Articles</h3>
+          <h3 class="sub-heading">Journal Articles</h3>
           <ul class="pub-list">
             <li data-category="journals">
               <span class="pub-year">2026</span>
-              <div>Zulfiqar M.N., Hou T., <strong>Pasha I.</strong> et al. Exploring nanobubble technology with κ-carrageenan-immobilized <em>Methylosinus trichosporium</em> for methane-to-methanol conversion. <em>Renewable and Sustainable Energy Reviews</em>. 231:116777. <span class="if-badge">IF 16.3</span></div>
+              <div><a href="https://scholar.google.com/scholar?q=Ansar%2C%20S.%2C%20I.%20Pasha%2C%20R.M.%20Aadil%20and%20M.A.%20Hanif.%202026.%20Comparison%20of%20Different%20Extraction%20Methods%20on%20" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Ansar, S., I. Pasha, R.M. Aadil and M.A. Hanif. 2026. Comparison of Different Extraction Methods on Potato Starch Properties. Potato Research. 69. 90. (Impact factor: 2.1, HEC Recognized ‘W’ Category). <span class="if-badge">IF 2.1</span></a></div>
             </li>
             <li data-category="journals">
               <span class="pub-year">2026</span>
-              <div>Syed A., Butt M.S., <strong>Pasha I.</strong> &amp; Hussain F. Smart hurdle technology for sustainable processing of sugarcane juice. <em>Discover Food</em>. <span class="if-badge">IF 3.7</span></div>
+              <div><a href="https://doi.org/10.1007/s44187-026-00871-7" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Syed, A., M.S. Butt, I.  Pasha, and  F. Hussain. 2026. Application of smart hurdle technology for sustainable processing and preservation of sugarcane juice. Discover Food.  (Impact factor: 3.7, HEC Recognized ‘W’ Category, ISSN: 2731-4286). <span class="if-badge">IF 3.7</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2026</span>
+              <div><a href="https://doi.org/10.1007/s42976-026-00771-7" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Rasheed, H., I. Pasha, M.A. Randhawa, and M.A. Hanif. 2026. Comparative effect of malting on nutritional profile, malting properties and structural characteristics of barley, corn, and rice. Cereal Research Communications. 1-11. (Impact factor: 1.9, HEC Recognized ‘W’ Category, ISSN: 0133-3720). <span class="if-badge">IF 1.9</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2026</span>
+              <div><a href="https://doi.org/10.1016/j.rser.2026.116777" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Zulfiqar, M. N., T. Hou, I. Pasha, P. Li, H. Sun, L. Liu, and Y. Jiao 2026. Exploring the potential of nanobubble technology integration with natural polymer κ-carrageenan-immobilized Methylosinus trichosporium OB3b: A review of methane-to-methanol conversion. Renewable and Sustainable Energy Reviews. 231. 116777. (Impact factor: 16.3, HEC Recognized ‘W’ Category, ISSN: 1364-0321). <span class="if-badge">IF 16.3</span></a></div>
             </li>
             <li data-category="journals">
               <span class="pub-year">2025</span>
-              <div>Israr B., <strong>Pasha I.</strong> et al. Adherence to national dietary guidelines in school children aged 6–10 in Pakistan. <em>Proceedings of the Nutrition Society</em>. <span class="if-badge">IF 8.3</span></div>
+              <div><a href="https://doi.org/10.1007/s11694-025-03872-9" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">UlAbedin, Z., and I. Pasha. 2025. Comparative analysis of Capsicum annuum from Pakistan using HPLC, FTIR and GC-MS in powdered form and solvent extracts. Journal of Food Measurement and Characterization. 1-15. (Impact factor: 3.95, HEC Recognized ‘W’ Category). <span class="if-badge">IF 3.95</span></a></div>
             </li>
             <li data-category="journals">
               <span class="pub-year">2025</span>
-              <div>UlAbedin Z. &amp; <strong>Pasha I.</strong> Comparative analysis of <em>Capsicum annuum</em> from Pakistan using HPLC, FTIR and GC-MS. <em>Journal of Food Measurement and Characterization</em>. <span class="if-badge">IF 3.95</span></div>
+              <div><a href="https://doi.org/10.1002/mnfr.70295" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Tul-Muntaha, S., A. Rakha, I. Pasha and B.Aslam. 2025. Anti-Inflammatory and Antioxidant Potential of Polyphenol–Protein Particle-Enriched Beverage via Attenuating Biochemical Alterations and Colon Tissue Damage in Acetic Acid-Induced Colitis in Rats. Molecular Nutrition & Food Research. e70295. (Impact Factor: 4.2, HEC Recognized ‘W’ Category, ISSN: <span class="if-badge">IF 4.2</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2025</span>
+              <div><a href="https://doi.org/10.1155/jfpp/6736541" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Tul-Muntaha, S., I. Pasha, H. Rasheed, A. Rakha, I. Fatima, F. Rasheed and G. Abdi. 2025. Nutritional, Textural, Phytochemical, and Sensory Properties of Novel Biscuits Supplemented With Alfalfa Leaf Protein Concentrate. Journal of Food Processing and Preservation. 2025(1), 6736541.(Impact factor: 2.93, HEC Recognized ‘X’ Category ISSN: 1745-4549). <span class="if-badge">IF 2.93</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2025</span>
+              <div><a href="https://scholar.google.com/scholar?q=Younas%2C%20U.%2C%20M.I.%20Khan%2C%20I.%20Pasha%20and%20B.%20Israr.%202025.%20Exploring%20Therapeutic%20Potential%20of%20Emblicaoffici" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Younas, U., M.I. Khan, I. Pasha and B. Israr. 2025. Exploring Therapeutic Potential of Emblicaofficinalis (Amla) Against Streptozotocin-Induced Diabetic Nephropathy in Wistar Rats. Current Topics in Medicinal Chemistry. (Impact Factor: 3.3, HEC Recognized ‘W’ Category ISSN:1568-0266). <span class="if-badge">IF 3.3</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2025</span>
+              <div><a href="https://scholar.google.com/scholar?q=Israr%2C%20B.%2C%20I.%20Pasha%2C%20R.%20Shaukat%2C%20S.%20Arif%2C%20A.%20Inam%2C%20S.%20Rafaqat%2C%20and%20H.%20Hafeez.%20Assessing%20adherence%20to" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Israr, B., I. Pasha, R. Shaukat, S. Arif, A. Inam, S. Rafaqat, and H. Hafeez. Assessing adherence to National dietary guidelines in school children aged 6-10 years in Pakistan. Proceedings of the Nutrition Society 84, no. OCE3 (2025): E241. (Impact Factor: 8.3, HEC Recognized ‘W’ Category ISSN: 0029-6651). <span class="if-badge">IF 8.3</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2025</span>
+              <div><a href="https://scholar.google.com/scholar?q=Conteh%2C%20C.K.%2C%20I.%20Pasha%2C%20A.%20Hassan%20and%20M.A.%20Zia.%202025.%20Development%20and%20nutritional%20characterization%20o" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Conteh, C.K., I. Pasha, A. Hassan and M.A. Zia. 2025. Development and nutritional characterization of multigrain flour supplemented with microwave-treated corn germ moiety. Journal of Food Measurement and Characterization. 1-10. (Impact factor: 3.95, HEC Recognized ‘W’ Category ISSN: 2193-4134). <span class="if-badge">IF 3.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2025</span>
+              <div><a href="https://doi.org/10.1016/j.afres.2025.101146" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Fordos, S., S. Amin, N. Abid, I. Pasha, M.K.I.  Khan, M. A. Amin, M. Gulzar, M. Subtain and G. Abdi. 2025. Saponins: Advances in Extraction Techniques, Functional Properties, and Industrial Applications. Applied Food Research. 101146. (Impact factor: 4.5, HEC Recognized ‘W’ Category ISSN: 2772-5022). <span class="if-badge">IF 4.5</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2025</span>
+              <div><a href="https://doi.org/10.1371/journal.pone.0326532" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Adnan, M., M.S. Butt, I. Pasha and M. Shahid. 2025. Development of cookies from wheat-yellow/white maize composite blends and their physical and sensory evaluation. PloS one. 20(6): e0326532.(Impact factor: 2.6, HEC Recognized ‘W’ Category ISSN: 1932-6203). <span class="if-badge">IF 2.6</span></a></div>
             </li>
             <li data-category="journals">
               <span class="pub-year">2024</span>
-              <div>Niazi S., Khan I.M., Akhtar W., <strong>Pasha I.</strong> et al. Aptamer functionalized gold nanoclusters for biosensing, diagnostics, catalysis and bioimaging. <em>Talanta</em>. 268(1):125270. <span class="if-badge">IF 6.51</span></div>
+              <div><a href="https://doi.org/10.1007/s13399-024-06283-w" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Usman, M., F. Ahmad, I. Pasha, M.A. Nasir, M. Subtain and S. Ahmad. 2024. Characterization and end-use perspectives of modified cereal brans: a step towards waste valorization. Biomass Conversion and Biorefinery. 15:17727–17737. (Impact factor: 4.06, HEC Recognized ‘X’ Category ISSN: 2190-6823). <span class="if-badge">IF 4.06</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2024</span>
+              <div><a href="https://doi.org/10.1016/j.heliyon.2024.e34400" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Iqbal, Z., T. Zahoor, I. Pasha and M. Shahid. 2024. Eco-safe hot water dip alleviates antioxidant level and sensory quality of Indian jujube fruits. Heliyon. 10(14): e34400. (Impact factor: 4.45, HEC Recognized ‘W’ Category ISSN:2405-8440). <span class="if-badge">IF 4.45</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2024</span>
+              <div><a href="https://scholar.google.com/scholar?q=Amin%2C%20S.%2C%20I.%20Pasha%2C%20A.%20Amin%2C%20F.%20Ahmed%20and%20R.M.%20Aadil.%202024.%20Characterisation%20of%20wholegrain%20composite" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Amin, S., I. Pasha, A. Amin, F. Ahmed and R.M. Aadil. 2024. Characterisation of wholegrain composite for pretzels: a comprehensive nutritional and functional analysis. International Journal of Food Science & Technology.59(7): 4841-4850. (Impact Factor: 3.3, HEC Recognized ‘W’ Category ISSN: 1094-2912). <span class="if-badge">IF 3.3</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2024</span>
+              <div><a href="https://scholar.google.com/scholar?q=Subtain%2C%20M.%2C%20I.%20Pasha%2C%20F.%20Ahmad%2C%20H.%20Rasheed%2C%20S.%20Ansar%2C%20S.%20Fordos%2C%20%26%20H.%20Ayub.%202024.%20Phytochemical%20cha" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Subtain, M., I. Pasha, F. Ahmad, H. Rasheed, S. Ansar, S. Fordos, & H. Ayub. 2024. Phytochemical characterization and end use evaluation of native and fermented cereal brans. Journal of Food Measurement and Characterization. 18(7): 5552-5563. (Impact factor: 3.95, HEC Recognized ‘W’ Category ISSN: 2193-4134). <span class="if-badge">IF 3.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2024</span>
+              <div><a href="https://scholar.google.com/scholar?q=Sidrah%2C%20S.%20Ahmad%2C%20U.M.%20Khan%2C%20M.%20Akhtar%2C%20I.Pasha.%202024.%20Assessing%20the%20oat%20oil%20attributes%20and%20partial%20" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Sidrah, S. Ahmad, U.M. Khan, M. Akhtar, I.Pasha. 2024. Assessing the oat oil attributes and partial substitution in cookies with special reference to fatty acid profile. Journal of Food Measurement and Characterization. 18(7): 5710-5719. (Impact factor: 3.95, HEC Recognized ‘W’ Category ISSN: 2193-4134). <span class="if-badge">IF 3.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2024</span>
+              <div><a href="https://scholar.google.com/scholar?q=Subtain%2C%20M.%2C%20I.%20Pasha%2C%20A.%20Rakha%20and%20A.%20Jamil.%202024.%20Extraction%20evaluation%20and%20chemical%20characterizat" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Subtain, M., I. Pasha, A. Rakha and A. Jamil. 2024. Extraction evaluation and chemical characterization of ginger oleoresins; a functional food ingredient. Journal of Food Measurement and Characterization. 18(6): 4611-4619.(Impact factor: 3.95, HEC Recognized ‘W’ Category ISSN: 2193-4134). <span class="if-badge">IF 3.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2024</span>
+              <div><a href="https://scholar.google.com/scholar?q=Chughtai%2C%20M.%20F.%20J.%2C%20I.%20Pasha%2C%20S.%20Ahsan%2C%20T.%20Mehmood%2C%20M.Z.%20Khalid%2C%20M.A.%20Farooq%20and%20F.K.%20Madilo.%202024.%20" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Chughtai, M. F. J., I. Pasha, S. Ahsan, T. Mehmood, M.Z. Khalid, M.A. Farooq and F.K. Madilo. 2024. Metabolic syndrome extenuation in rat model by feeding Stevia rebaudianaBertoni cookies. Cogent Food & Agriculture. 10(1):2305513. (Impact factor: 2.31, HEC Recognized ‘W’ Category ISSN: 2331-1932). <span class="if-badge">IF 2.31</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2024</span>
+              <div><a href="https://doi.org/10.1007/s11694-024-02488-9" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Subtain, M., I. Pasha and F. Ahmad. 2024. Onion oleoresins; extraction comparison and phytochemical characterization. Journal of Food Measurement and Characterization. 18(6): 4221-4228. (Impact factor: 3.95, HEC Recognized ‘W’ Category ISSN: 2193-4134). <span class="if-badge">IF 3.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2024</span>
+              <div><a href="https://doi.org/10.1016/j.talanta.2023.125270" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Niazi, S., I.M. Khan, W. Akhtar, F.U. Haq, I. Pasha, M.K.I. Khan, M. K. I. and Z.  Wang. 2024. Aptamer functionalized gold nanoclusters as an emerging nanoprobe in biosensing, diagnostic, catalysis and bioimaging. Talanta. 268(1):125270. (Impact factor: 6.51, HEC Recognized ‘W’ Category ISSN: 1873-3573). <span class="if-badge">IF 6.51</span></a></div>
             </li>
             <li data-category="journals">
               <span class="pub-year">2023</span>
-              <div>Khan I.M., Niazi S., <strong>Pasha I.</strong> et al. Surface functionalized AuNCs optical biosensor as an emerging food safety indicator. <em>Coordination Chemistry Reviews</em>. 474:214842. <span class="if-badge">IF 20.38</span></div>
+              <div><a href="https://doi.org/10.1021/acsomega.3c03861.s001" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Shahzadi, N., M.S. Butt, I. Pasha and M.N. Faisal. 2023. Phytochemical profiling and nutritional characterization of raphanussativus roots. Journal of population therapeutics and clinical pharmacology. 30:2433-2439. (Impact factor: 1.94, HEC Recognized ‘X’ Category ISSN: 1198-581). <span class="if-badge">IF 1.94</span></a></div>
             </li>
             <li data-category="journals">
               <span class="pub-year">2023</span>
-              <div>Khan I.M., Niazi S., <strong>Pasha I.</strong> et al. Novel metal enhanced dual-mode fluorometric and SERS aptasensor for ultrasensitive T-2 toxin detection. <em>Journal of Materials Chemistry B</em>. 11:441–451. <span class="if-badge">IF 7.22</span></div>
+              <div><a href="https://scholar.google.com/scholar?q=Faiz%2C%20A.%2C%20I.%20Pasha%2C%20M.A.%20Randhawa%20and%20M.%20Shahid.%202023.%20Phytochemical%20and%20nutritional%20profiling%20of%20in" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Faiz, A., I. Pasha, M.A. Randhawa and M. Shahid. 2023. Phytochemical and nutritional profiling of indigenous soybean varieties; A potential plant-based protein source to alleviate malnourishment. Journal of population therapeutics and clinical pharmacology. 30:644-651. (Impact Factor: 1.94, HEC recognized ‘X’ category ISSN: 1198-581X) <span class="if-badge">IF 1.94</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2023</span>
+              <div><a href="https://doi.org/10.1007/s11694-023-02089-y" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Jamil, A., I. Pasha, M.K. Sharif and B. Israr. 2023. Functional characterization and phytochemical profiling of terminaliachebula fruit. Journal of population therapeutics and clinical pharmacology. 30:2440-2449. (Impact Factor: 1.94, HEC recognized ‘X’ category ISSN: 1198-581X). <span class="if-badge">IF 1.94</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2023</span>
+              <div><a href="https://doi.org/10.1080/10915810601163939" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">UlAbedin, Z., I. Pasha, M.S. Butt and M.N. Faisal. 2023. Exploring the therapeutic potential of capsicum annuum extract against breast cancer in spraguedawley rats. Journal of population therapeutics and clinical pharmacology. 30:2422-2432. (Impact Factor: 1.94, HEC Recognized ‘X’ category ISSN: 1710-6222). <span class="if-badge">IF 1.94</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2023</span>
+              <div><a href="https://doi.org/10.1007/s13399-023-04778-6" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Fordos, S., N. Abid, M. Gulzar, I. Pasha, F. Oz, A. Shahid and R. M. Aadil, 2023. Recent development in the application of walnut processing by-products (walnut shell and walnut husk). Biomass Conversion and Biorefinery. 1-23. (Impact factor: 4.06, HEC Recognized ‘X’ Category ISSN: 2190-6823). <span class="if-badge">IF 4.06</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2023</span>
+              <div><a href="https://doi.org/10.1007/s11694-023-02089-y" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Subtain, M., I. Pasha, A. Rakha and A. Jamil. 2023. Extraction comparison and characterization of garlic oleoresins; a potential functional ingredient. Journal of Food Measurement and Characterization. 1-9. (Impact factor: 3.95, HEC Recognized ‘W’ Category ISSN: 2193-4134). <span class="if-badge">IF 3.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2023</span>
+              <div><a href="https://scholar.google.com/scholar?q=Khan%2C%20I.M.%2C%20S.%20Niazi%2C%20I.%20Pasha%2C%20M.K.I.%20Khan%2C%20L.%20Yue%2C%20H.%20Ye%20and%20Z.%20Wang.%202023.%20Novel%20metal%20enhanced%20d" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Khan, I.M., S. Niazi, I. Pasha, M.K.I. Khan, L. Yue, H. Ye and Z. Wang. 2023. Novel metal enhanced dual-mode fluorometric and SERS aptasensor incorporating a heterostructurenanoassembly for ultrasensitive T-2 toxin detection. Journal of Materials Chemistry B. 11: 441-451. (Impact factor: 7.22, HEC Recognized ‘W’ Category ISSN: 2050-7518). <span class="if-badge">IF 7.22</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2023</span>
+              <div><a href="https://doi.org/10.47836/ifrj.30.1.06" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Manzoor, M.S., I. Pasha, S. Younas, M. Zhu, R. Hussain, U. Arqam and MF.J. Chughtai. 2023. Phenolic acid profile of oat cultivars, and their suppressive effect on intracellular reactive oxygen species. International Food Research Journal. 30:1. (Impact factor: 0.92, HEC Recognized ‘X’ Category ISSN: 2231-7546) <span class="if-badge">IF 0.92</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2023</span>
+              <div><a href="https://scholar.google.com/scholar?q=Khan%2C%20I.M.%2C%20S.%20Niazi%2C%20W.%20Akhtar%2C%20L.%20Yue%2C%20I.%20Pasha%2C%20M.K.I.%20Khan%2C%20A.%20Mohsin%2C%20M.W.%20Iqbal%2C%20Y.%20Zhang%20and%20" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Khan, I.M., S. Niazi, W. Akhtar, L. Yue, I. Pasha, M.K.I. Khan, A. Mohsin, M.W. Iqbal, Y. Zhang and Z. Wang. 2023. Surface functionalized AuNCs optical biosensor as an emerging food safety indicator Coordination Chemistry Reviews. 474:214842. (Impact Factor: 20.38, HEC Recognized ‘W’ Category ISSN: 0010-8545). <span class="if-badge">IF 20.38</span></a></div>
             </li>
             <li data-category="journals">
               <span class="pub-year">2022</span>
-              <div><strong>Pasha I.</strong>, Arshad A., Ahmad F. &amp; Raza A. Anti-ulcerative potential of sweet potato against aspirin-induced gastric ulcer in rabbit model. <em>Nutrition</em>. 111799. <span class="if-badge">IF 4.46</span></div>
+              <div><a href="https://scholar.google.com/scholar?q=Pasha%2C%20I.%2C%20A.%20Basit%2C%20M.%20Ahsin%20and%20F.%20Ahmad.%202022.%20Probing%20nutritional%20and%C2%A0functional%20properties%20of%C2%A0s" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I., A. Basit, M. Ahsin and F. Ahmad. 2022. Probing nutritional and functional properties of salted noodles supplemented with ripen Banana peel powder. Food Production, Processing and Nutrition.4:1-10. (Impact factor: 4.78,HEC Recognized‘X’Category ISSN: 2661-8974). <span class="if-badge">IF 4.78</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2022</span>
+              <div><a href="https://doi.org/10.1186/s43014-021-00081-x" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Liaquat, M., I. Pasha, M. Ahsin and A.Salik. 2022. Roasted fox nuts (Euryale Ferox L.) contain higher concentration of phenolics, flavonoids, minerals and antioxidants, and exhibit lower Glycemic Index (GI) in human subjects. Food Production, Processing and Nutrition.4:1-12. (Impact factor: 4.78, HEC Recognized ‘X’ Category ISSN: 2661-8974). <span class="if-badge">IF 4.78</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2022</span>
+              <div><a href="https://doi.org/10.1016/j.nut.2022.111799" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I. A. Arshad, F. Ahmad and A. Raza. 2022. Anti-ulcerative potential of sweet potato (Ipomoea batatas) against aspirin-induced gastric ulcer in rabbit model. Nutrition. 111799. (Impact factor: 4.46, HEC Recognized ‘W’ Category ISSN: 0899-9007). <span class="if-badge">IF 4.46</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2022</span>
+              <div><a href="https://scholar.google.com/scholar?q=Ahmad%2C%20M.H.%2C%20A.%20Sahar%2C%20I.%20Pasha%2C%20M.K.%20Khan%2C%20M.%20Imran%2C%20N.%20Muhammad%20and%20H.W.%20Haider.%202022.%20Monitoring%20" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Ahmad, M.H., A. Sahar, I. Pasha, M.K. Khan, M. Imran, N. Muhammad and H.W. Haider. 2022. Monitoring of wheat flour aging process using traditional methods and Fourier transform infrared spectroscopy coupled with chemometrics. International Journal of Food Properties 25:1513-1523. (Impact Factor: 3.3, HEC Recognized ‘W’ Category ISSN: 1094-2912). <span class="if-badge">IF 3.3</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2022</span>
+              <div><a href="https://doi.org/10.1002/cche.10604" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Ahsin, M., I. Pasha, M. Liaquat and M. Amir. 2022. Genetic and agronomic zinc biofortification modify processing and nutritional quality of common wheat. Cereal Chemistry. 100:131-141. (Impact factor: 2.78, HEC Recognized ‘W’ Category ISSN: 1943-3638). <span class="if-badge">IF 2.78</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2022</span>
+              <div><a href="https://doi.org/10.1111/ijfs.15631/v4/response1" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Arshad, M., S. Anwar, I. Pasha, F. Ahmed and R. M. Aadil. 2022. Development of imitated meat product by utilizing pea and lentil protein isolates. International Journal of Food Science and Technology.57:3031-3037. ami</a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2022</span>
+              <div><a href="https://scholar.google.com/scholar?q=Ashraf%2C%20K.%2C%20I.%20Pasha%2C%20Q.U.%20Zaman%2C%20A.%20Nazir%20and%20M.%20Iqbal.%202022.%20Quantification%20of%20antioxidant%20potenti" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Ashraf, K., I. Pasha, Q.U. Zaman, A. Nazir and M. Iqbal. 2022. Quantification of antioxidant potential of baked and fried multigrain food material as a tool for nutritional optimization strategy. Biocatalysis and Agricultural Biotechnology.41:102315. (Impact factor: 4.66 HEC Recognized ‘W’ CategoryISSN: 1878-8181). <span class="if-badge">IF 4.66</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2022</span>
+              <div><a href="https://doi.org/10.1590/fst.86021" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Ishfaq, B., A. Sameen, I. Pasha, M. Shahid and M. Abrar. 2022. Evaluation of cookery methods in reduction of pesticide residues and quality attributes of okra fruit (Abelmoschusesculentus L.). Food Science and Technology.42:e8602.(Impact factor: 1 HECRecognized ‘Y’ Category ISSN:1475-3324). <span class="if-badge">IF 1</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2022</span>
+              <div><a href="https://scholar.google.com/scholar?q=Kanwal%2C%20N.%2C%20I.%20Pasha%2C%20R.%20Shukat%20and%20A.%20Zia.%202022.%20Selection%20of%20barley%20varieties%20with%20increased%20non-s" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Kanwal, N., I. Pasha, R. Shukat and A. Zia. 2022. Selection of barley varieties with increased non-starch polysaccharides using chemometric methods for their bread-making potential. Journal of Food Processing and Preservation. 46:e17182. (Impact factor: 2.93, HEC Recognized ‘X’ Category ISSN: 1745-4549). <span class="if-badge">IF 2.93</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2022</span>
+              <div><a href="https://scholar.google.com/scholar?q=Khan.%2C%20I.M.%2C%20S.%20Niazi%2C%20L.%20Yue%2C%20Y.%20Zhang%2C%20I.%20Pasha%2C%20M.K.I.%20Khan%2C%20W.%20Akhtar%2C%20A.%20Mohsi%2C%20M.F.J.%20Chughtai" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Khan., I.M., S. Niazi, L. Yue, Y. Zhang, I. Pasha, M.K.I. Khan, W. Akhtar, A. Mohsi, M.F.J. Chughtai and Z. Wang. 2022. Research update of emergent gold nanoclusters: A reinforced approach towards evolution, synthesis mechanism and application. Talanta.241:123228. (Impact factor: 6.51, HEC Recognized ‘X’ Category ‘W’ Category ISSN: 1873-3573). <span class="if-badge">IF 6.51</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2022</span>
+              <div><a href="https://scholar.google.com/scholar?q=Saeed%2C%20K.%20I.%20Pasha%2C%20M.%20F.%20J.%20Chugtai%2C%20Z.%20Ali%2C%20HinaBukhari%20and%20M.%20Zubair.%202022.%20Application%20of%20essent" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Saeed, K. I. Pasha, M. F. J. Chugtai, Z. Ali, HinaBukhari and M. Zubair. 2022. Application of essential oils in food industry: challenges and innovation. Journal of Essential Oil Research. 34:97-110. (Impact Factor: 3.42, HEC Recognized ‘X’ Category ISSN: 1041-2905). <span class="if-badge">IF 3.42</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2022</span>
+              <div><a href="https://scholar.google.com/scholar?q=Saleem%2C%20A.%2C%20A.%20Sahar%2C%20I.%20Pasha%20and%20M.%20Shahid.%202022.%20Determination%20of%20Adulteration%20of%20Chicken%20Meat%20in" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Saleem, A., A. Sahar, I. Pasha and M. Shahid. 2022. Determination of Adulteration of Chicken Meat into Minced Beef Mixtures using Front Face Fluorescence Spectroscopy Coupled with Chemometric. Food Science of Animal Resources.42:672. (Impact Factor: 3.21, HEC Recognized ‘W’ Category ISSN: 2636-0772). <span class="if-badge">IF 3.21</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2022</span>
+              <div><a href="https://doi.org/10.17221/309/2020-cjfs" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Shahnila., S. Arif, I. Pasha, H. Ifthikhar, F. Mehak and R. Sultan. 2022. Effects of eggshell powder supplementation on nutritional and sensory attributes of biscuits. Czech Journal of Food Sciences. 40:26-32. (Impact Factor: 1.54, HEC Recognized ‘X’ Category ISSN 1805-9317). <span class="if-badge">IF 1.54</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2022</span>
+              <div><a href="https://doi.org/10.1007/s12192-022-01291-z" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Tariq, U., M.S. Butt, I. Pasha and M.N. Faisal. 2022. Prophylactic role of olive fruit extract against cigarette smoke–induced oxidative stress in Sprague–Dawley rats. Cell Stress and Chaperones. 27:545-560. (Impact factor: 3.67, HEC Recognized ‘X’ Category ISSN 1355-8145). <span class="if-badge">IF 3.67</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2022</span>
+              <div><a href="https://doi.org/10.1007/s10787-022-01118-4" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Hannan A., B. Akhtar, A. Sharif, F. Anjum, I. Pasha, A. Khan, M.F. Akhtar and A. Saleem. 2022. Quercetin-loaded chitosan nanoparticles ameliorate adjuvant-induced arthritis in rats by regulating anti-oxidant enzymes and downregulating pro- and inflammatory cytokines. Inflammopharmacology. 31:1-14. Impact factor: 5.28 HEC Recognized ‘W’ Category ISSN: 0925-4692.</a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2021</span>
+              <div><a href="https://scholar.google.com/scholar?q=Javed%2C%20F.%2C%20M.K.%20Sharif%2C%20I.%20Pasha%20and%20A.%20Jamil.%202021.%20Probing%20the%20nutritional%20quality%20of%20ready-to-use" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Javed, F., M.K. Sharif, I. Pasha and A. Jamil. 2021. Probing the nutritional quality of ready-to-use therapeutic foods developed from locally grown peanut, chickpea and mungbean for tackling malnutrition. Pakistan Journal of Agricultural Sciences. 58:205-212. (Impact Factor: 0.95, HEC Recognized ‘X’ Category ISSN: 0552-9034). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2021</span>
+              <div><a href="https://doi.org/10.1111/jfbc.13768" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I., F. Ahmad and M. Usman. 2021. Elucidation of morphological characteristics, crystallinity and molecular structures of native and enzyme modified cereal brans. Journal of Food Biochemistry. 45:e13768. (Impact Factor: 4.21, HEC Recognized ‘W’ Category ISSN: 1745-4514). <span class="if-badge">IF 4.21</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2021</span>
+              <div><a href="https://doi.org/10.1016/j.jfca.2020.103732" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I. and F. Ahmad. 2021. Monosaccharide Composition and Carbohydrates Linkage Identification in Cereal Brans Using UHPLC/QqQ-DMRM-MS. Journal of Food Composition and Analysis. 92:103732. (Impact factor: 4.5, HEC Recognized ‘W’ Category ISSN: 0889-1575). <span class="if-badge">IF 4.5</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2021</span>
+              <div><a href="https://scholar.google.com/scholar?q=Tariq%2C%20U.%2C%20M.%20S.%20Butt%2C%20I.%20Pasha%20and%20M.%20N.%20Faisal.%202021.%20Neuroprotective%20effects%20of%20Oleaeuropaea%20L.%20f" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Tariq, U., M. S. Butt, I. Pasha and M. N. Faisal. 2021. Neuroprotective effects of Oleaeuropaea L. fruit extract against cigarette smoke-induced depressive-like behaviors in Sprague–Dawley rats. Journal of Food Biochemistry. 45:e14014. (Impact Factor: 4.21, HEC Recognized ‘W’ Category ISSN: 1745-4514, 0145). <span class="if-badge">IF 4.21</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2021</span>
+              <div><a href="https://scholar.google.com/scholar?q=Javed%2C%20F.%2C%20S.%20Jabeen%2C%20M.%20K.%20Sharif%2C%20I.%20Pasha%2C%20A.%20Riaz%2C%20M.%20F.%20Manzoor%2C%20A.%20Sahar%2C%20E.%20Karrar%20and%20R.%20M.%20" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Javed, F., S. Jabeen, M. K. Sharif, I. Pasha, A. Riaz, M. F. Manzoor, A. Sahar, E. Karrar and R. M. Aadil. 2021. Development and storage stability of chickpea, mung bean, and peanut‐based ready‐to‐use therapeutic food to tackle protein‐energy malnutrition. Food Science and Nutrition. 9:5131-5138. (Impact Factor: 4.32, HEC Recognized ‘W’ Category ISSN:2048-7177). <span class="if-badge">IF 4.32</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2021</span>
+              <div><a href="https://doi.org/10.1016/j.foodchem.2021.130352" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Hassan, G., M.A. Shabbir, F. Ahmad, I. Pasha, N. Aslam, T. Ahmad, A. Rehman, M. F. Manzoor, M. I.  Ur-Raheem and R. M. Aadil. 2021. Cereal processing waste, an environmental impact and value addition perspectives: A comprehensive treatise. Food Chemistry.130352. (Impact Factor: 10.07, HEC Recognized ‘W’ Category ISSN: 0308-8146). <span class="if-badge">IF 10.07</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2021</span>
+              <div><a href="https://doi.org/10.1111/jfpp.15023" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Tufail, T., F. Saeed, I. Pasha, M. U. Arshad, M. Afzaal, H. B. UlAin, S. Bashir, M. Imran, M. Z. Shahid, M. Abdullah and H.A. Suleria. 2021. Extraction, quantification, and biochemical characterization of cereal industry by‐product cell wall. Journal of Food Processing and Preservation. 45:e15023. (Impact Factor: 2.93, HEC Recognized ‘X’ Category ISSN: 1745-4549). <span class="if-badge">IF 2.93</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2021</span>
+              <div><a href="https://doi.org/10.15414/jmbfs.2019/20.9.3.648-652" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Khaliq, A., T. Zahoor, M. Nadeem, M. Imran, S.A. Gilani, M.F.J. Chughtai, M.B. Irshad, A. Liaqat, I. Pasha, S. Ahsan and F.U.H. Shah. 2021. Assessment of camel milk yogurt as a cogent approach on streptozotocin (stz) induced diabetes mellitus in sprague-dawley rats. Journal of Microbiology, Biotechnology and Food Sciences. 9:648-652. (Impact Factor: 1.03, HEC Recognized ‘Y’ Category 1SSN:1338-5178). <span class="if-badge">IF 1.03</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2021</span>
+              <div><a href="https://scholar.google.com/scholar?q=Mushtaq%2C%20B.S.%2C%20I.%20Pasha%2C%20R.%20Omer%2C%20M.B.%20Hussain%2C%20T.%20Tufail%2C%20M.A.%20Shariati%2C%20A.A.%20Derkanosova%2C%20I.P.%20Shc" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Mushtaq, B.S., I. Pasha, R. Omer, M.B. Hussain, T. Tufail, M.A. Shariati, A.A. Derkanosova, I.P. Shchetilina, N.N. Popova, E.S., Popov and O.V. Oseneva. 2021. Characterization of Moringaoleifera leaves and its utilization as value added ingredient in unleavened flat bread (chapatti). Journal of Microbiology, Biotechnology and Food Sciences. 750-755. (Impact Factor: 1.03, HEC Recognized ‘Y’ Category ISSN: 1338-5178). <span class="if-badge">IF 1.03</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2021</span>
+              <div><a href="https://scholar.google.com/scholar?q=Safdar%2C%20M.%2C%20S.A.%20Naqvi%2C%20I.%20Pasha%2C%20M.%20Shahid%2C%20Waliullah%2C%20M.J.%20Jaskani.%2C%20I.A.%20Khan%20and%20R.M.%20Aadil.%20202" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Safdar, M., S.A. Naqvi, I. Pasha, M. Shahid, Waliullah, M.J. Jaskani., I.A. Khan and R.M. Aadil. 2021. Microbial biofilm inhibition, antioxidants and chemical fingerprints of Afghani pomegranate peel extract documented by GC-MS and FTIR. Journal of Food Processing and Preservation.45:e15657. (Impact Factor: 2.93, HEC Recognized ‘X’ Category ISSN: 1745-4549). <span class="if-badge">IF 2.93</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2021</span>
+              <div><a href="https://scholar.google.com/scholar?q=Ahmad%2C%20S.%2C%20A.%20Naz%2C%20M.%20Usman%2C%20A.%20Amjad%2C%20I.%20Pasha%20and%20U.%20Farooq.%202021.%20Impediment%20effect%20of%20chemical%20a" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Ahmad, S., A. Naz, M. Usman, A. Amjad, I. Pasha and U. Farooq. 2021. Impediment effect of chemical agents (additives) on gluten development in cookie dough. International Journal of Food Science and Technology. 59:1396-1406. (Impact Factor: 4.11, HEC Recognized ‘W’ Category ISSN: 0975-8402). <span class="if-badge">IF 4.11</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2021</span>
+              <div><a href="https://doi.org/10.1080/09540105.2021.1911959" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Rahman, SJ., M.F.J Chughtai, A. Khaliq, T. Mehmood, A. Liaqat, S. Ahsan, I. Pasha, S. Tanweer, M. Nadeem and A.B. Tahir. 2021. Food induced anaphylaxis: causes, risk factors and clinical management. Food and Agricultural Immunology. 32:253-264. (Impact Factor: 3.13, HEC Recognized ‘X’ Category ISSN: 0954-0105). <span class="if-badge">IF 3.13</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2020</span>
+              <div><a href="https://doi.org/10.1080/19476337.2020.1721562" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Chughtai, M.F.J., I. Pasha, T. Zahoor, A. Khaliq, S. Ahsan, Z. Wu, M. Nadeem, T. Mehmood, R. M. Amir, I. Yasmin, A. Liaqat and S. Tanweer. 2020. Nutritional and therapeutic perspectives of Stevia rebaudiana as emerging sweetener; a way forward for sweetener industry. CYTA – Journal of Food. 18:164–177. (Impact Factor: 2.49, HEC Recognized ‘Y’ Category ISSN: 1947-6337). <span class="if-badge">IF 2.49</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2020</span>
+              <div><a href="https://doi.org/10.1007/s11694-020-00438-9" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I., F. Ahmad, Z. Siddique and F. Iqbal. 2020. Probing the effect of physical modifications on cereal bran chemistry and antioxidant potential. Journal of Food Measurement and Characterization. 14:1909-1918. (Impact Factor: 3.95, HEC Recognized ‘W’ Category ISSN: 2193-4126). <span class="if-badge">IF 3.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2020</span>
+              <div><a href="https://doi.org/10.47836/ifrj.30.1.06" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Manzoor, M.S., I. Pasha, A. Shehzad, M.A. Zia and M.J. Zhu. 2020. Antioxidant profiling of indigenous oat cultivars with special reference to avenanthramides. International Food Research Journal. 27:261-269. (Impact Factor: 0.92, HEC Recognized ‘X’ Category ISSN: 2231-7546) <span class="if-badge">IF 0.92</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2020</span>
+              <div><a href="https://doi.org/10.1111/jtxs.12555" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Khan, W.A., M.S. Butt, I. Pasha, M. Saeed, I. Yasmeen, M. Ali, M. Azam and M.S. Khan. 2020. Bioavailability, rheology, and sensory evaluation of mayonnaise fortified with vitamin D encapsulated in protein-based carriers. Journal of Texture Studies. 51:955-967. (Impact Factor: 3.73, HEC Recognized ‘W’ Category ISSN: 2193-4126). <span class="if-badge">IF 3.73</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2020</span>
+              <div><a href="https://scholar.google.com/scholar?q=Khan%2C%20FA%2C%20K.%20Ameer%2C%20M.%20A.%20Qaiser%2C%20I.%20Pasha%2C%20Q.%20Mahmood%2C%20F.M.%20Anjum%2C%20A.%20Riaz%20and%20R.M.%20Amir.%202020.%20Dev" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Khan, FA, K. Ameer, M. A. Qaiser, I. Pasha, Q. Mahmood, F.M. Anjum, A. Riaz and R.M. Amir. 2020. Development and analysis of bread fortified with calcium extracted from chicken eggshells of Pakistani market. Food Science and Technology. 41:14-20. (Impact Factor:1, HEC Recognized ‘Y’ Category ISSN: 0101-2061).</a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2020</span>
+              <div><a href="https://doi.org/10.1590/fst.18920" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Raza, H., K. Ameer, F. Zaaboul, M. Shoaib, I. Pasha, M. Nadeem, X. Ren and L. Zhang. 2020. Effects of intensification of vaporization by decompression to the vacuum (IVDV) and frying on physiochemical, structural, thermal, and rheological properties of chickpea (CicerArietinum L.) Powder. Food Science and Technology. 41:669-677. (Impact Factor: 1, HEC Recognized ‘Y’ Category ISSN: 0101-2061). <span class="if-badge">IF 1</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2020</span>
+              <div><a href="https://scholar.google.com/scholar?q=Khan%2C%20I.%20M.%2C%20S.%20Niazi%2C%20Y.%20Yu%2C%20I.%20Pasha%2C%20L.%20Yue%2C%20A.%20Mohsin%2C%20M.%20Shoaib%2C%20M.W.%20Iqbal%2C%20A.%20Khaliq%20and%20Z.%20W" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Khan, I. M., S. Niazi, Y. Yu, I. Pasha, L. Yue, A. Mohsin, M. Shoaib, M.W. Iqbal, A. Khaliq and Z. Wang. 2020. Fabrication of PAA coated green-emitting AuNCs for construction of label-free FRET assembly for specific recognition of T-2 toxin. Sensors and Actuators: B. Chemical. 321:128470. (Impact Factor: 8.82, HEC Recognized ‘W’ Category ISSN: 0925-4005). <span class="if-badge">IF 8.82</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2020</span>
+              <div><a href="https://doi.org/10.1016/j.fbio.2020.100679" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Azam, M., M. Saeed, I. Pasha and M. Shahid. 2020. A prebiotic-based biopolymeric encapsulation system for improved survival of Lactobacillus rhamnosus. Food Bioscience. 37:1006792. (Impact Factor: 5.6, HEC Recognized ‘W’ Category ISSN: 2212-4292). <span class="if-badge">IF 5.6</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2020</span>
+              <div><a href="https://scholar.google.com/scholar?q=Niazi%2C%20S.%2C%20Z.%20Wang%20and%20I.%20Pasha.%202020.%20A%20novel%20fluorescent%20aptasensor%20for%20aflatoxin%20M1%20detection%20usi" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Niazi, S., Z. Wang and I. Pasha. 2020. A novel fluorescent aptasensor for aflatoxin M1 detection using rolling circle amplification and g-C3N4 as fluorescence quencher. Sensors and Actuators: B. Chemical. 315:128049. (Impact Factor: 8.82, HEC Recognized ‘W’ Category ISSN: 0925-4005). <span class="if-badge">IF 8.82</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2020</span>
+              <div><a href="https://doi.org/10.1007/s11694-019-00366-3" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Khan, W.A., M.S. Butt, I. Pasha and A. Jamil. 2020. Microencapsulation of vitamin D in protein matrices: In vitro release and storage stability. Journal of Food Measurement and Characterization. 14:1172–1182. (Impact Factor: 3.95, HEC Recognized ‘W’ Category ISSN: 2193-4126). <span class="if-badge">IF 3.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2020</span>
+              <div><a href="https://scholar.google.com/scholar?q=Aslam%2C%20M.%2C%20M.A.%20Shabbir%2C%20I.%20Pasha%2C%20R.%20Shukat%2C%20U.%20Siddique%2C%20M.F.%20Manzoor%20and%20S.%20Ayub.%202020.%20Protectiv" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Aslam, M., M.A. Shabbir, I. Pasha, R. Shukat, U. Siddique, M.F. Manzoor and S. Ayub. 2020. Protective effect of sesame (sesamumindicum) seed oil against hypercholesterolemicin sprague-dawley male rats. Food Science and Technology. 41:741-745. (Impact Factor: 1, HEC Recognized ‘Y’ Category ISSN:1475-3324).. <span class="if-badge">IF 1</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2019</span>
+              <div><a href="https://doi.org/10.12692/10.12692/ijb/15.5.479-486" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Chugtai, M.F.J., I. Pasha, M.S. Butt and M. Asghar. 2019. Biochemical and nutritional attributes of Stevia rebaudiana grown in Pakistan. Progress in Nutrition. 21:210-222. (Impact Factor: 0.61, HEC Recognized ‘Y’ category ISSN: 1129-8723). <span class="if-badge">IF 0.61</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2019</span>
+              <div><a href="https://doi.org/10.1111/ijfs.14046" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Ahmad, F., I. Pasha, M. Saeed and M. Asgher. 2019. Antioxidant profiling of native and modified cereal brans. International Journal of Food Science and Technology. 54:1206-1214. (Impact Factor: 3.86, HEC Recognized ‘W’ Category ISSN: 1365-2621). <span class="if-badge">IF 3.86</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2019</span>
+              <div><a href="https://scholar.google.com/scholar?q=Khan%2C%20M.%20I.%2C%20S.%20Niazi%2C%20M.K.%20Iqbal%20Khan%2C%20I.%20Pasha%2C%20A.%20Mohsin%2C%20J.%20Haider%2C%20M.W.%20Iqbal%2C%20A.%20Rehman%2C%20L.%20Yu" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Khan, M. I., S. Niazi, M.K. Iqbal Khan, I. Pasha, A. Mohsin, J. Haider, M.W. Iqbal, A. Rehman, L. Yue and Z. Wang. 2019. Recent Advances and Perspectives of AIE as an Emerging Platform for Detection and Bioimaging. Trends in Analytical Chemistry. 119:115637. (Impact Factor: 13.53, HEC Recognized ‘W’ Category ISSN: 0165-9936). <span class="if-badge">IF 13.53</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2019</span>
+              <div><a href="https://scholar.google.com/scholar?q=Niazi%2C%20S.%2C%20I.%20M.%20Khan%2C%20Ye%20Yu%2C%20I.%20Pasha%2C%20M.%20Shoaib%2C%20A.%20Mohsin%2C%20B.%20S.%20Mushtaq%2C%20W.%20Akhtar%20and%20Z.%20Wang.%20" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Niazi, S., I. M. Khan, Ye Yu, I. Pasha, M. Shoaib, A. Mohsin, B. S. Mushtaq, W. Akhtar and Z. Wang. 2019. A “turnon” aptasensor for simultaneous and time-resolved fluorometric determination of zearalenone, trichothecenes A and aflatoxin B1 using WS2 as a quencher. MikcrochimicaActa. 186:575. (Impact Factor: 5.6, HEC Recognized ‘W’ Category ISSN: 0026-3672). <span class="if-badge">IF 5.6</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2018</span>
+              <div><a href="https://scholar.google.com/scholar?q=Ahmad%2C%20F.%2C%20I.%20Pasha%2C%20M.%20Saeed%20and%20M.%20Asgher.%202018.%20Biochemical%20Profiling%20of%20Pakistani%20Sorghum%20and%20Mi" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Ahmad, F., I. Pasha, M. Saeed and M. Asgher. 2018. Biochemical Profiling of Pakistani Sorghum and Millet Varieties with Special Reference to Anthocyanins and Condensed Tannins. International Journal of Food Properties. 21:1586–1597. (Impact Factor: 3.3, HEC Recognized ‘W’ category ISSN: 1094-2912). <span class="if-badge">IF 3.3</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2018</span>
+              <div><a href="https://doi.org/10.1007/s12602-018-9407-x" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Yasmin, I., M. Saeed, I. Pasha and M.A. Zia. 2018. Development of Whey Protein Concentrate-Pectin-Alginate Based Delivery System to Improve Survival of B. longum BL-05 in Simulated Gastrointestinal Conditions. Probiotics and Antimicrobial Proteins. 11:413-426. (Impact Factor: 5.2, HEC Recognized ‘X’ Category ISSN: 1867-1306). <span class="if-badge">IF 5.2</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2018</span>
+              <div><a href="https://doi.org/10.7717/peerj.5376" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Rehman, U., A. Sehar, I. Pasha, S.U. Rehman and A. Ishaq. 2018.  Assessing the capability of Fourier transform infrared spectroscopy in tandem with chemometric analysis for predicting poultry meat spoilage. PeerJ. 6:e5376. (Impact Factor: 2.83, HEC Recognized ‘W’ Category ISSN: 2167-8359). <span class="if-badge">IF 2.83</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2018</span>
+              <div><a href="https://doi.org/10.5958/2277-8934.2018.00017.6" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Khaliq, A., T. Zahoor, I. Pasha, A.S. Qureshi and M. Asghar. 2018. Biochemical Characterisation of Camel Milk from Different Regions of Punjab-Pakistan. Journal of Camel Practice and Research. 25:123-130. (Impact Factor: 0.3, HEC Recognized ‘Y’ Category ISSN: 0971-6777). <span class="if-badge">IF 0.3</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2018</span>
+              <div><a href="https://doi.org/10.1111/1541-4337.12365" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Hameed, A., S.A. Hussain, M.U. Ijaz, S. Ullah, I. Pasha and H.A.R. Suleria. 2018. Farm to Consumer: Factors Affecting the Organoleptic Characteristics of Coffee. II. Post-Harvest Processing Factors. Comprehensive Reviews in Food Science and Food Safety. 17:1184-1237. (Impact Factor: 16.34, HEC Recognized ‘W’ Category ISSN: 1541-4337). <span class="if-badge">IF 16.34</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2018</span>
+              <div><a href="https://doi.org/10.17582/journal.pjz/2018.50.5.sc6" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Huma, N., F. Ghaffar, S. Rafiq, I. Pasha, A. Sameen, I. Hayat and I. Hussain. 2018. Characterization of Milk Proteins from Different Animal Species through Gel Electrophoresis.ActaAgriculturaeScandinavica - Section A: Animal Science. 50:1983-1986. (Impact Factor: 0.85, HEC Recognized ‘X’ Category ISSN: 0906-4702). <span class="if-badge">IF 0.85</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2018</span>
+              <div><a href="https://scholar.google.com/scholar?q=Niazi%2C%20S.%2C%20X.%20Wang%2C%20I.%20Pasha%2C%20I.%20M.%20Khan%2C%20S.%20Zhao%2C%20M.%20Shoaib%2C%20S.%20Wu%20and%20Z.%20Wang.%202018.%20A%20novel%20bioas" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Niazi, S., X. Wang, I. Pasha, I. M. Khan, S. Zhao, M. Shoaib, S. Wu and Z. Wang. 2018. A novel bioassay based on aptamer-functionalized magnetic nanoparticle for the detection of zearalenone using time resolved-fluorescence NaYF4: Ce/Tb nanoparticles as signal probe. Talanta. 186:97-103 (Impact Factor: 6.51, HEC Recognized ‘W’ Category ISSN: 0039-9140). <span class="if-badge">IF 6.51</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2018</span>
+              <div><a href="https://scholar.google.com/scholar?q=Siddique%2C%20T.%2C%20A.%20Asghar%2C%20I.%20Pasha%20and%20M.%2C%20Shahid.%202018.%20Evaluation%20of%20Functional%20Properties%20of%20Zein%20" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Siddique, T., A. Asghar, I. Pasha and M., Shahid. 2018. Evaluation of Functional Properties of Zein Extracted from Various Maize Varieties. Journal of biological regulators and homeostatic agents. 32:899-903. (Impact factor: 1.79, HEC Recognized ‘X’ Category ISSN: 1724-6083). <span class="if-badge">IF 1.79</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2017</span>
+              <div><a href="https://scholar.google.com/scholar?q=Ahmad%2C%20S.%2CI.%20Pasha%2C%20M.%20Saeed%20and%20M.%20Shahid.%202017.%20Principal%20component%20analysis%20and%20correlation%20studi" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Ahmad, S.,I. Pasha, M. Saeed and M. Shahid. 2017. Principal component analysis and correlation studies of spring wheats in relation to cookie making quality. International Journal of Food Properties. 20:2299-2313. (Impact Factor: 3.3, HEC Recognized ‘W’ Category ISSN: 1094-2912). <span class="if-badge">IF 3.3</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2017</span>
+              <div><a href="https://scholar.google.com/scholar?q=Lillah%2C%20A.%2C%20Asghar%2C%20I.%20Pasha%2C%20G.%20Murtaza%20and%20M.%20Ali.%202017.%20Improving%20heat%20stability%20along%20with%20quali" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Lillah, A., Asghar, I. Pasha, G. Murtaza and M. Ali. 2017. Improving heat stability along with quality of compound dark chocolate by adding optimized cocoa butter substitute (hydrogenated palm kernel stearin) emulsion. LWT-Food Science and Technology. 80:531-536. (Impact Factor: 6.91, HEC Recognized ‘W’ Category ISSN: 0023-6438). <span class="if-badge">IF 6.91</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2017</span>
+              <div><a href="https://doi.org/10.1186/s12944-017-0489-3" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Shabbir, M.A., M.R. Khan, M. Saeed, I. Pasha, A.A. Khalil and N. Siraj. 2017. Punicic acid: A striking health substance to combat metabolic syndromes in humans. Lipids in Health and Disease. 16:99-107. (Impact Factor: 4.42, HEC Recognized ‘W’ Category ISSN: 1476-511X). <span class="if-badge">IF 4.42</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2017</span>
+              <div><a href="https://doi.org/10.1111/jfpp.13030" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Rehman, UB., A. Sahar, I. Pasha, S. Rehman, M. Shoaib, A. Ishaq, M.F.J. Chugtaiand A. Zafar. 2017. Augmenting quality and microbial safety of broiler meat at refrigeration storage by applying chemical interventions. Journal of Food Processing and Preservation. 41:e13030. (Impact Factor: 2.93, HEC Recognized ‘X’ Category ISSN: 1745-4549). <span class="if-badge">IF 2.93</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2017</span>
+              <div><a href="https://doi.org/10.1111/1471-0307.12373" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Rafiq, S, N. Huma, I. Pasha, M. Shahid and H. Xiao. 2017. Angiotensin-converting enzyme-inhibitory and antithrombotic activities of soluble peptide extracts from buffalo and cow milk Cheddar cheeses. International Journal of Dairy Technology. 70:380-388. (Impact Factor: 5.04, HEC Recognized ‘W’ Category ISSN: 1471-0307). <span class="if-badge">IF 5.04</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2017</span>
+              <div><a href="https://doi.org/10.22194/jgiass/4.2.747" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Raza, H., I. Pasha, M. Shoaib, F. Zaaboul, S. Niazi and W. Aboshora. 2017. Review on functional and rheological attributes of kafirin for utilization in gluten free baking industry. American Journal of Food Science and Nutrition Research. 4:150-157. (Impact Factor: 3.93). HEC Recognized by ‘W’ Category. ISSN: 0963-7486. <span class="if-badge">IF 3.93</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2016</span>
+              <div><a href="https://doi.org/10.1080/10408398.2012.659818" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I., F. Saeed, M.T. Sultan, M. Aziz, R. Batool and W. Ahmad. 2016. Wheat Allergy and Intolerance; Recent Updates and Perspectives. Critical Reviews in Food Science and Nutrition. 56:13-24. (Impact Factor: 11.83, HEC Recognized ‘W’ Category ISSN: 1040-8398). <span class="if-badge">IF 11.83</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2016</span>
+              <div><a href="https://doi.org/10.1080/10942912.2015.1085396" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Ahmad, S., M.S. Butt, I. Pasha and A. Sameen. 2016. Quality of processed cheddar cheese as a function of emulsifying salts replaced by K-carrageenan. International Journal of Food Properties.19:1874-1883. (Impact Factor: 3.3, HEC Recognized ‘W’ Category ISSN: 1094-2912). <span class="if-badge">IF 3.3</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2016</span>
+              <div><a href="https://scholar.google.com/scholar?q=Abdullah%2C%20M.A.%20Randhawa%2C%20A.%20Asghar%2C%20I.%20Pasha%2C%20R.%20Usman%2C%20M.%20Shamoon%2C%20M.%20A.%20Bhatti%2C%20M.%20A.%20Irshad%20and%20N" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Abdullah, M.A. Randhawa, A. Asghar, I. Pasha, R. Usman, M. Shamoon, M. A. Bhatti, M. A. Irshad and N. Ahmad. 2016. Evaluation of various soaking agents as a novel tool for pesticide residues mitigation from cauliflower (Brassica oleraceavar.botrytis). Journal of Food Science and Technology. 53:3312–3319. (Impact Factor: 4.11, HEC Recognized ‘W’ Category ISSN: 0022-1155). <span class="if-badge">IF 4.11</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2016</span>
+              <div><a href="https://scholar.google.com/scholar?q=Rafiq%2C%20S.%2C%20N.%20Huma%2C%20I.%20Pasha%20and%20M.%20Shahid.%202016.%20Compositional%20Profiling%20and%20Proteolytic%20Activities" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Rafiq, S., N. Huma, I. Pasha and M. Shahid. 2016. Compositional Profiling and Proteolytic Activities in Cow and Buffalo Milk Cheddar Cheese. ActaAgriculturaeScandinavica - Section A: Animal Science. 48:1141-1146. (Impact Factor: 0.85, HEC Recognized ‘X’ Category ISSN: 0906-4702). <span class="if-badge">IF 0.85</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2016</span>
+              <div><a href="https://doi.org/10.71016/hnjss/rcbdw967" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Shah, F., G. Rasool, M.K. Sharif, I. Pasha, S. Ahmad and H.R. Sharif. 2016. Determination of trans fat in traditional Pakistani breakfast and snack foods. International Food Research Journal. 23:849-85. (Impact Factor: 0.92, HEC Recognized ‘X’ Category ISNN: 2231-7546). <span class="if-badge">IF 0.92</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2015</span>
+              <div><a href="https://doi.org/10.1080/10942912.2012.716475" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Saeed, F., I. Pasha, M.U. Arshad, R. Rasheed, M.A Nasir and B. Shafique. 2015. Physiological and Nutraceutical Perspectives of Fructan. International Journal of Food Properties. 18:1895-1904. (Impact Factor: 3.3, HEC Recognized ‘W’ Category ISSN: 1094-2912). <span class="if-badge">IF 3.3</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2015</span>
+              <div><a href="https://scholar.google.com/scholar?q=Iqbal%2C%20Z.%2C%20I.%20Pasha%2C%20M.%20Abrar%2C%20S.%20Masih%20and%20M.%20S.%20Hanif.%202015.%20Physico-chemical%2C%20functional%20and%20rheo" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Iqbal, Z., I. Pasha, M. Abrar, S. Masih and M. S. Hanif. 2015. Physico-chemical, functional and rheological properties of wheat varieties. Journal of Agricultural Research. 53:253-267 (Impact factor 0.64, HEC Recognized ‘Y’ Category). <span class="if-badge">IF 0.64</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2015</span>
+              <div><a href="https://doi.org/10.1111/jfpp.12323" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I., A. Riaz, M. Saeed and M.A. Randhawa. 2015. Exploring the antioxidant perspective of sorghum and millet. Journal of Food Processing and Preservation. 39:1089-1097. (Impact Factor: 2.93, HEC Recognized ‘X’ Category ISSN: 1745-4549). <span class="if-badge">IF 2.93</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2015</span>
+              <div><a href="https://doi.org/10.1111/jfpp.12322" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Saeed, F., M.U. Arshad, I. Pasha, H.A.R. Suleria, M.S. Arshad, A. Qamar, AzmatUllahand S. Sultan. 2015. Effect of arabinoxylan and arabinogalactan on textural attributes of bread. Journal of Food Processing and Preservation. 39:1070–1088. (Impact Factor: 2.93, HEC Recognized ‘X’ Category ISSN: 1745-4549). <span class="if-badge">IF 2.93</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2015</span>
+              <div><a href="https://scholar.google.com/scholar?q=Parveen%2C%20R.%2C%20H.A.R.%20Sularia%2C%20F.M.%20Anjum%2C%20M.S.%20Butt%2C%20I.%20Pasha%20and%20S.%20Ahmed.%202015.%20Tomato%20%28SolanumLyco" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Parveen, R., H.A.R. Sularia, F.M. Anjum, M.S. Butt, I. Pasha and S. Ahmed. 2015. Tomato (SolanumLycopersicum) caretonoids and lycopenes chemistry; metabolism, absorption, nutrition and allied health claims-A comprehensive review. Critical Reviews in Food Science and Nutrition. 55:919-929. (Impact Factor: 11.83, HEC Recognized ‘W’ Category ISSN: 1040-8398). <span class="if-badge">IF 11.83</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2015</span>
+              <div><a href="https://doi.org/10.1108/nfs-05-2015-0064" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I., S. Hussain, M.I. Khan and N. Akram. 2015. Utilization of processed Vignamungo L. flour in cookies. Nutrition and Food Science. 45:883-894. (Impact Factor: 1.49, HEC Recognized ‘X’ Category ISSN: 0034-6659). <span class="if-badge">IF 1.49</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2014</span>
+              <div><a href="https://doi.org/10.1080/10408398.2011.585254" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I., F. Saeed, M. T. Sultan, M.R. Khan and M. Rohi. 2014. Recent developments in minimal processing: a tool to retain nutritional quality of food. Critical Reviews in Food Science and Nutrition. 54:340-351. (Impact Factor. 11.83, HEC Recognized ‘W’ Category ISSN: 1040-8398/1549-7852).</a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2014</span>
+              <div><a href="https://doi.org/10.1080/10942912.2011.570470" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I.,I.Saqib, M.S. Butt, M.A. Randhawa and F. Saeed. 2014. Distribution of Phenolic Acids in Milling Fractions of Spring Wheats. International Journal of Food Properties. 17: 2052-2062. (Impact Factor: 3.3, HEC Recognized ‘W’ Category ISSN: 1094-2912). <span class="if-badge">IF 3.3</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2014</span>
+              <div><a href="https://scholar.google.com/scholar?q=Saeed%2C%20F.%2C%20I.%20Pasha%2C%20F.M.%20Anjum%20and%20J.I.%20Sultan.%202014.%20Arabinoxylans%20and%20arabinogalactan%20content%20in%20" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Saeed, F., I. Pasha, F.M. Anjum and J.I. Sultan. 2014. Arabinoxylans and arabinogalactan content in different spring wheats. International Journal of Food Properties. 17:713-721. (Impact Factor: 3.3, HEC Recognized ‘W’ Category ISSN: 1094-2912). <span class="if-badge">IF 3.3</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2014</span>
+              <div><a href="https://doi.org/10.1080/10942912.2012.709210" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Saeed, F., M. U. Arshad, I. Pasha, R. Naz, R. Batool, A. A. Khan, M. A. Nasir and B. Shafique. 2014. Nutritional and Phyto-therapeutic Potential of Papaya (Carica papaya Linn.): An Overview. International Journal of Food Properties. 17:1637-1653. (Impact Factor: 3.3, HEC Recognized ‘W’ Category ISSN: 1094-2912). <span class="if-badge">IF 3.3</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2014</span>
+              <div><a href="https://doi.org/10.1007/s13197-012-0666-3" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Tehseen, S., F.M. Anjum, I. Pasha, M.I. Khan and F. Saeed. 2014. Suitability of spring wheat varieties for the production of best quality pizza. Journal of Food Science and Technology. 51:1517-1524. (Impact Factor: 4.11, HEC Recognized ‘W’ Category ISSN: 0022-1155). <span class="if-badge">IF 4.11</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2013</span>
+              <div><a href="https://doi.org/10.1080/10408398.2010.528080" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I., F. Saeed, F.M. Anjum, K. Waqas and M.U. Arshad. 2013. Nutraceutical& Functional Scenario of Wheat Straw. Critical Reviews in Food Science and Nutrition. 53:287-295. (Impact Factor: 11.83, HEC Recognized ‘W’ Category ISSN: 1040-8398). <span class="if-badge">IF 11.83</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2013</span>
+              <div><a href="https://doi.org/10.1080/10408398.2011.571799" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Butt, M.S., I. Pasha, M.T. Sultan, M.A. Randhawa, F. Saeed and W. Ahmad. 2013. Black Pepper and Health Claims: A Comprehensive treatise. Critical Reviews in Food Science and Nutrition. 53:875-886. (Impact Factor: 11.83, HEC Recognized ‘W’ Category ISSN: 1040-8398). <span class="if-badge">IF 11.83</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2013</span>
+              <div><a href="https://scholar.google.com/scholar?q=Amir%2C%20R.%20M.%2C%20F.%20M.%20Anjum%2C%20M.%20I.%20Khan%2C%20M.%20R.%20Khan%2C%20I.%20Pasha%20and%20M.%20Nadeem.%202013.%20Application%20of%20Fouri" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Amir, R. M., F. M. Anjum, M. I. Khan, M. R. Khan, I. Pasha and M. Nadeem. 2013. Application of Fourier Transform Infrared (FTIR) Spectroscopy for the identification of wheat varieties. Journal of Food Science and Technology. 50:1018-1023. (Impact Factor: 4.11, HEC Recognized ‘W’ Category ISSN: 0022-1155). <span class="if-badge">IF 4.11</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2013</span>
+              <div><a href="https://scholar.google.com/scholar?q=Abrar%2C%20M.%2C%20F.M.%20Anjum%2C%20I.%20Pasha%2C%20M.A.%20Randhawa%2C%20F.%20Saeed%20and%20K.%20Waqas.%202013.%20Aflatoxins%3A%20Biosynthesi" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Abrar, M., F.M. Anjum, I. Pasha, M.A. Randhawa, F. Saeed and K. Waqas. 2013. Aflatoxins: Biosynthesis, Occurrence, Toxicity and Remedies. Critical Reviews in Food Science and Nutrition. 53:862-874. (Impact Factor: 11.83, HEC Recognized ‘W’ Category ISSN: 1040-8398). <span class="if-badge">IF 11.83</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2012</span>
+              <div><a href="https://scholar.google.com/scholar?q=Khan%2C%20M.%20I.%2C%20F.%20M.%20Anjum%2C%20I.%20Pasha%2C%20A.%20Sameen%20and%20M.%20Nadeem.%202012.%20Nutritional%20quality%20and%20safety%20of" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Khan, M. I., F. M. Anjum, I. Pasha, A. Sameen and M. Nadeem. 2012. Nutritional quality and safety of wheat-soy composite flour chapattis. British Food Journal. 114:239-247. (Impact Factor: 4.09, HEC Recognized ‘W’ Category ISSN: 0007-070X). <span class="if-badge">IF 4.09</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2012</span>
+              <div><a href="https://scholar.google.com/scholar?q=Khan%2C%20M.R..%2C%20F.%20M.%20Anjum%2C%20I.%20Pasha%2C%20M.%20A.%20Shabbir%2C%20S.%20Hussain%20and%20M.%20Nadeem.%202012.%20Application%20of%20En" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Khan, M.R.., F. M. Anjum, I. Pasha, M. A. Shabbir, S. Hussain and M. Nadeem. 2012. Application of Enzyme Linked Immunosorbent Assay for The Assessment of Spring Wheat Quality. Food and Agricultural Immunology. 23:1-15. (Impact Factor: 3.13, HEC Recognized ‘X’ Category ISSN: 0954-0105). <span class="if-badge">IF 3.13</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2011</span>
+              <div><a href="https://scholar.google.com/scholar?q=Saeed%2C%20F.%2C%20I.%20Pasha%2C%20F.M.%20Anjum%20and%20J.I.%20Sultan.%202011.%20Water%20Extractable%20Arabinoxylan%20Content%20in%20Mil" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Saeed, F., I. Pasha, F.M. Anjum and J.I. Sultan. 2011. Water Extractable Arabinoxylan Content in Milling Fractions of Spring Wheats. CYTA-Journal of Food. 9:43-48. (Impact Factor: 2.49, HEC Recognized ‘Y’ Category ISSN: 1947-6345). <span class="if-badge">IF 2.49</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2011</span>
+              <div><a href="https://scholar.google.com/scholar?q=Saeed%2C%20F.%2C%20I.%20Pasha%2C%20F.M.%20Anjum%20and%20M.T.%20Sultan.%202011.%20Arabinoxylans%20and%20Arabinogalactans%3A%20A%20compreh" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Saeed, F., I. Pasha, F.M. Anjum and M.T. Sultan. 2011. Arabinoxylans and Arabinogalactans: A comprehensive treatise. Critical Reviews in Food Science and Nutrition. 51:467-476. (Impact Factor: 11.83, HEC Recognized ‘W’ Category ISSN: 1040-8398). <span class="if-badge">IF 11.83</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2010</span>
+              <div><a href="https://scholar.google.com/scholar?q=Pasha%2C%20I.%2C%20F.M.%20Anjum%20and%20C.F.%20Morris.%202010.%20Grain%20Hardness%3A%20a%20major%20determinant%20of%20wheat%20quality%20%28A" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I., F.M. Anjum and C.F. Morris. 2010. Grain Hardness: a major determinant of wheat quality (A Review). Food Science and Technology International. 16:0511-12. (Impact Factor: 3.01, HEC Recognized ‘X’ Category ISSN: 1082-0132). <span class="if-badge">IF 3.01</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2010</span>
+              <div><a href="https://scholar.google.com/scholar?q=Anjum%20F.M.%2C%20M.%20Sabir%2C%20M.I.%20Khan%20and%20I.%20Pasha.%202010.%20Sugar%20utilization%20behavior%20of%20Yeast%20%28Saccharomyc" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Anjum F.M., M. Sabir, M.I. Khan and I. Pasha. 2010. Sugar utilization behavior of Yeast (Saccharomyces cerevisae) types and doses on bread quality. Nutrition and Food Science 40: 395-402. (Impact Factor:1.49, HEC Recognized ‘X’ Category ISSN: 0034-6659)</a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2009</span>
+              <div><a href="https://scholar.google.com/scholar?q=Pasha%2C%20I.%2C%20F.M.%20Anjum%20and%20M.S.%20Butt.%202009.%20Genotypic%20variation%20of%20spring%20wheats%20for%20solvent%20retentio" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I., F.M. Anjum and M.S. Butt. 2009. Genotypic variation of spring wheats for solvent retention capacities in relation to end use quality. LWT Food Science and Technology. 42:418-423. (Impact Factor: 6.91, HEC Recognized ‘W’ Category ISSN: 0023-6438). <span class="if-badge">IF 6.91</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2009</span>
+              <div><a href="https://scholar.google.com/scholar?q=Pasha%2C%20I.%2C%20F.M.%20Anjum%20and%20M.S.%20Butt.%202009.%20Biochemical%20Characterization%20of%20Spring%20wheats%20in%20relation" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I., F.M. Anjum and M.S. Butt. 2009. Biochemical Characterization of Spring wheats in relation to grain hardness. International Journal of Food Properties 12:910-928. (Impact Factor: 3.3, HEC Recognized ‘W’ Category ISSN: 1094-2912). <span class="if-badge">IF 3.3</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2008</span>
+              <div><a href="https://doi.org/10.1016/j.foodchem.2007.06.011" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Anjum, F.M., I. Ahmad, M.S. Butt, M.U. Arshad and I. Pasha. 2008. Improvement in end-use quality of spring wheat varieties grown in different eras. Food Chemistry. 106:482-486. (Impact Factor: 10.07, HEC Recognized ‘W’ Category ISSN: 0308-8146). <span class="if-badge">IF 10.07</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2008</span>
+              <div><a href="https://doi.org/10.1108/00346650810863028" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Anjum F.M., I. Pasha, K. Ghafoor, M.I. Khan and M.A. Raza. 2008. Preparation of sourdough bread using a blend of bacterial culture and baker’s yeast. Nutrition and Food Science 38:146-153. (Impact Factor: 1.49, HEC Recognized ‘X’ Category ISSN: 0034-6659). <span class="if-badge">IF 1.49</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2008</span>
+              <div><a href="https://doi.org/10.1108/00346650810907001" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Anjum F.M., I. Pasha, S. Ahmad, M. I. Khan and Z. Iqbal. 2008. Effect of emulsifiers on wheat potato composite flour for the production of leavened flat bread (naan). Nutrition and Food Science. 38:482-491. (Impact Factor:1.49, HEC Recognized ‘X’ Category ISSN: 0034-6659).</a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2007</span>
+              <div><a href="https://doi.org/10.1111/j.1745-4557.2007.00133.x" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I., F.M. Anjum, M.S. Butt and J.I. Sultan. 2007. Gluten quality prediction and correlation studies in spring wheats. Journal of Food Quality. 30:438-449. (Impact Factor: 3.49, HEC Recognized ‘W’ Category ISSN: 0146-9428). <span class="if-badge">IF 3.49</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2007</span>
+              <div><a href="https://doi.org/10.1111/j.1750-3841.2007.00292.x" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Anjum, F.M, M.R. Khan, A. Din, M. Saeed, I. Pasha and M.U. Arshad. 2007. Wheat gluten: High molecular weight glutenin subunits- structure, genetics and relation to dough elasticity (Review). Journal of Food Science. 72:564-572 (Impact Factor: 4.03, HEC Recognized ‘W’ Category ISSN: 0022-1147). <span class="if-badge">IF 4.03</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2005</span>
+              <div><a href="https://doi.org/10.1016/j.jfca.2004.04.009" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Anjum, F. M., I. Ahmad, M. S.  Butt, M.A. Sheikh and I. Pasha. 2005. Amino acid composition of spring wheats and losses of lysine during chapati baking. Journal of Food Composition and Analysis. 8:523-532. (Impact Factor: 4.5, HEC Recognized ‘W’ Category ISSN: 0889-1575). <span class="if-badge">IF 4.5</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2026</span>
+              <div><a href="https://doi.org/10.58475/2026.64.1.1225" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Parveen, S., S. Masih, Z. Iqbal, H. Kausar, M. Aziz, I. Pasha and B. Shafiq. 2026. Assessment of protein bioavailability from pulses-based composite flour diets. Journal of Agricultural Research. 64. 71-85. (Impact factor: 1.1, HEC Recognized ‘Y’ Category, ISSN: 0368-1157). <span class="if-badge">IF 1.1</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2025</span>
+              <div><a href="https://doi.org/10.63075/pjssr.v3i7.371" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Nasir, J., R. Kousar, B. Nasir, M.K. Bashir, A. Rakha, and I. Pasha. 2025. Integrating Agriculture for Nutrition in Pakistan: A Critical Review of Policy and Strategic Interventions. Policy Journal of Social Science Review. 3:127-134.</a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2024</span>
+              <div><a href="https://scholar.google.com/scholar?q=Iftikhar%2C%20H.%2C%20B.%20Israr%2C%20M.S.%20Butt%20and%20I.%20Pasha.%202024.%20The%20Impact%20of%20Iron%20and%20Zinc%20Fortified%20Snacks%20o" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Iftikhar, H., B. Israr, M.S. Butt and I. Pasha. 2024. The Impact of Iron and Zinc Fortified Snacks on Cognitive Performance in Pre-Adolescents. Pakistan Journal of Agricultural Sciences. 61(4): 1066-1074. (Impact factor: 0.95, HEC Recognized ‘W’ Category ISSN: 2076-0906). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2023</span>
+              <div><a href="https://scholar.google.com/scholar?q=Subtain%2C%20M.%2C%20I.%20Pasha%2C%20A.%20Rakha%20and%20A.%20Jamil.%202023.%20Extraction%20efficiency%20and%20characteristic%20evaluat" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Subtain, M., I. Pasha, A. Rakha and A. Jamil. 2023. Extraction efficiency and characteristic evaluation of turmeric oleoresins; A potential functional ingredient. Pakistan Journal of Agricultural Sciences. 60:283-292. (Impact factor: 0.95, HEC Recognized ‘W’ Category ISSN: 2076-0906). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2023</span>
+              <div><a href="https://scholar.google.com/scholar?q=Kanwal%2C%20N.%2C%20I.%20Pasha%2C%20A.%20Shehzad%2C%20R.%20Shukat%20and%20A.%20Zia.%202023.%20Chemometric%20characterization%20of%20twenty" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Kanwal, N., I. Pasha, A. Shehzad, R. Shukat and A. Zia. 2023. Chemometric characterization of twenty barley varieties/lines based upon mineral profiling. Pakistan Journal of Agricultural Sciences.  60:273-282. (Impact Factor: 0.95, HEC Recognized ‘X’ Category ISSN: 2076-0906). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2022</span>
+              <div><a href="https://scholar.google.com/scholar?q=Raza%2C%20A.%2C%20I.%20Pasha%2C%20T.%20Zahoor%20and%20M.N.%20Faisal.%202022.%20Phytochemical%2C%20antioxidant%20potential%20and%20chemic" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Raza, A., I. Pasha, T. Zahoor and M.N. Faisal. 2022. Phytochemical, antioxidant potential and chemical profile of various native and modified cereal brans. Pakistan Journal of Agricultural Sciences. 59. (Impact factor: 0.95, HEC Recognized ‘W’ Category ISSN: 2076-0906). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2021</span>
+              <div><a href="https://scholar.google.com/scholar?q=Riaz%2C%20A.%20and%20I.%20Pasha.%202021.%20Correlation%20studies%20of%20starch%20pasting%20properties%20determined%20through%20rap" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Riaz, A. and I. Pasha. 2021. Correlation studies of starch pasting properties determined through rapid visco analyzer.  Pakistan Journal of Scientific and Industrial Research. Series B: Biological Sciences. 64:83-91 (Impact Factor: 0.32, HEC Recognized ‘Y’ Category ISSN: 2221-6421). <span class="if-badge">IF 0.32</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2021</span>
+              <div><a href="https://doi.org/10.52763/pjsir.phys.sci.64.2.2021.173.190" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Riaz, A., I. Pasha, M.K. Sharif and S. Javaria. 2021. Bisphenol A and its analogues: Human Exposure and biological effects- A review. Pakistan Journal of Scientific and Industrial Research. Series A: Physical Sciences. 64:83-91. (Impact Factor: 0.43 HEC Recognized ‘Y’ Category ISSN: 2221-6413). <span class="if-badge">IF 0.43</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2020</span>
+              <div><a href="https://doi.org/10.17582/journal.pjar/2020/33.2.389.394" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Fatima, I., I. Pasha, A. Saddozai, S. Nadeem, A. Mumtaz and S. Jabbar. 2020. Safety Evaluation of Snacks and Beverages Sold at Various Locations of Faisalabad, Pakistan. Pakistan Journal of Agricultural Research. 33:389-394. (Impact factor 0.64, HEC Recognized ‘Y’ Category ISSN: 0251-0480). <span class="if-badge">IF 0.64</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2020</span>
+              <div><a href="https://doi.org/10.52763/pjsir.biol.sci.63.1.2020.1.8" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Riaz, A., I. Pasha and M.K.Sharif. 2020. Pearson’s correlation between physico-chemical aspects of wheat flour and quality attributes of cookies. Pakistan Journal of Scientific and Industrial Research Series B: Biological Sciences. 63:1-8. (Impact factor 0.32, HEC Recognized ‘Y’ Category ISSN: 2221-6421). <span class="if-badge">IF 0.32</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2020</span>
+              <div><a href="https://doi.org/10.1016/j.foodhyd.2019.05.004" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Khalid, N., T. Zahoor, I. Pasha and M. Shahid. 2020. Rheological characterization and Microstructural depiction of xanthan gum and its hydrolysates. Pakistan Journal of Agricultural Sciences. 57:561-571. (Impact Factor: 0.95, HEC Recognized ‘X’ Category ISSN: 0552-9034). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2020</span>
+              <div><a href="https://doi.org/10.52763/pjsir.biol.sci.62.3.2019.139.147" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Ejaz, R., M.K. Sharif, I. Pasha and M.A. Zia. 2020. Cooking and eating quality characteristics of some Pakistani rice varieties. Pakistan Journal of Agricultural Sciences. 57:525-533. (Impact Factor: 0.95, HEC Recognized ‘X’ Category ISSN: 0552-9034). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2020</span>
+              <div><a href="https://scholar.google.com/scholar?q=Sajjad%2C%20S%2C%20B.%20Israr%2C%20F.%20Ali%20and%20I.%20Pasha.%202020.%20Investigating%20the%20effect%20of%20Phytochemicals%20Rich%20Wate" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Sajjad, S, B. Israr, F. Ali and I. Pasha. 2020. Investigating the effect of Phytochemicals Rich Watermelon Seeds Against hypertension. Pakistan Journal of Agricultural Sciences. 57:1157-1164. (Impact Factor: 0.95, HEC Recognized ‘X’ Category ISSN: 0552-9034). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2019</span>
+              <div><a href="https://doi.org/10.52763/pjsir.biol.sci.62.3.2019.139.147" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Ejaz, R., M. K. Sharif, I. Pasha and M.A. Zia. 2019. Physical Characterization of Brown and White Fractions of Approved Rice Varieties of Pakistan. Pakistan Journal of Scientific and Industrial Research Series B: Biological Sciences. 62:139-147. (Impact factor, 0.32, HEC Recognized ‘Y’ Category ISSN 2221-6421).</a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2018</span>
+              <div><a href="https://doi.org/10.52763/pjsir.biol.sci.61.2.2018.78.83" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Gillani, M., H. Iftikhar, I. Pasha and A. Lodhi. 2018. Development and characterization of Fig (Ficuscarica) leaves tea with special reference to hypoglycemic effect. Pakistan Journal of Scientific and Industrial Research Series B: Biological Sciences. 61:43-50. (Impact factor, 0.32, HEC Recognized ‘Y’ Category ISSN: 2221-6421).</a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2018</span>
+              <div><a href="https://doi.org/10.21162/pakjas/18.6397" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Riaz, A., I. Pasha, M.K. Sharif and A. Jamil. 2018. Physico Chemical and organoleptic properties of cookies supplemented with chemically modified starch. Pakistan Journal of Agricultural Sciences. 55:169-174. (Impact Factor: 0.95, HEC Recognized ‘X’ Category ISSN: 0552-9034). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2018</span>
+              <div><a href="https://scholar.google.com/scholar?q=Manzoor%2C%20M.S.%2C%20I.%20Pasha%2C%20A.%20Shabbir%2C%20M.K.%20Sharif%20and%20M.F.J.%20Chughtai.%202018.%20Fortification%20and%20stabil" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Manzoor, M.S., I. Pasha, A. Shabbir, M.K. Sharif and M.F.J. Chughtai. 2018. Fortification and stability of iodine in bread to mitigate iodine deficiency disorder. Pakistan Journal of Scientific and Industrial Research, Series B: Biological Sciences. 61:145-150. (Impact factor, 0.32, HEC Recognized ‘Y’ Category ISSN 2221-6421).</a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2017</span>
+              <div><a href="https://scholar.google.com/scholar?q=Akram%2C%20N.%2C%20I.%20Pasha%2C%20N.%20Huma%20and%20M.%20Asghar.%202017.%20Effect%20of%20modified%20cereal%20starches%20on%20dough%20and%20br" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Akram, N., I. Pasha, N. Huma and M. Asghar. 2017. Effect of modified cereal starches on dough and bread quality. Pakistan Journal of Agricultural Sciences. 54:145-151. (Impact Factor: 0.95, HEC Recognized ‘X’ Category ISSN: 0552-9034). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2017</span>
+              <div><a href="https://scholar.google.com/scholar?q=Ejaz%2C%20R.%2C%20M.%20K.%20Sharif%2C%20I.%20Pasha%2C%20S.%20Abbas%2C%20A.%20Wadood%20and%20A.%20Amin.%202017.%20Barley%20and%20Oat%20Meal%20Supplem" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Ejaz, R., M. K. Sharif, I. Pasha, S. Abbas, A. Wadood and A. Amin. 2017. Barley and Oat Meal Supplemented Chapaties and its Impact on Serum Biochemical Profile in Normal Individuals. Pakistan Journal of Scientific and Industrial Research Series B: Biological Sciences. 60:19-26. (Impact factor, 0.32, HEC Recognized ‘Y’ Category ISSN: 2221-6421).</a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2017</span>
+              <div><a href="https://scholar.google.com/scholar?q=Pasha%2C%20I.%2C%20M.A.%20Shabbir%2C%20M.A.%20Haider%2C%20M.F.J.%20Chughtai%2C%20B.%20Afzal%2C%20S.%20Ahmed%20and%20M.S.%20Manzoor.%202017.%20Bi" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I., M.A. Shabbir, M.A. Haider, M.F.J. Chughtai, B. Afzal, S. Ahmed and M.S. Manzoor. 2017. Biochemical evaluation of Trigonellafoenumgraecum (Fenugreek) with special reference to phenolic acids and end use aspects. Pakistan Journal of Scientific and Industrial Research. 60:154-161. (Impact Factor: 0.32 HEC Recognized ‘Y’ Category ISSN: 2221-6421). <span class="if-badge">IF 0.32</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2016</span>
+              <div><a href="https://doi.org/10.52763/pjsir.biol.sci.59.3.2016.139.145" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I., M.F.J. Chughtai, S. Akhter, A. Sameen and M.S. Manzoor. 2016. Biochemical characterization and dietary fiber analysis of sugar beet supplemented cookies. Pakistan Journal of Scientific and Industrial Research.59:139-145. (Impact Factor: 0.32 HEC Recognized ‘Y’ Category ISSN: 2221-6421). <span class="if-badge">IF 0.32</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2016</span>
+              <div><a href="https://doi.org/10.21162/pakjas/16.4664" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Afzal, B., I. Pasha, T. Zahoor and H. Nawaz. 2016. Nutritional potential of fenugreek supplemented bread with special reference to antioxidant profiling. Pakistan Journal of Agricultural Sciences. 53:217-223. (Impact Factor: 0.95, HEC Recognized ‘X’ Category ISSN: 0552-9034). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2015</span>
+              <div><a href="https://doi.org/10.52763/pjsir.biol.sci.58.2.2015.83.91" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I., M.F.J. Chughtai, A. Sarwar, M.A. Shabbir and S. Ahmed. 2015. Application of extrusion technology to prepare bread crumb; a comparison with oven method. Pakistan Journal of Scientific and Industrial Research. 58:83-91. (Impact Factor: 0.32, HEC Recognized ‘Y’ Category ISSN: 2221-6421). <span class="if-badge">IF 0.32</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2015</span>
+              <div><a href="https://scholar.google.com/scholar?q=Iqbal%2C%20Z.%2C%20I.%20Pasha%2C%20M.S.%20Hanif%2C%20M.A.%20Randhawa%2C%20A.R.%20Rehman%20and%20A.%20M.%20Arif.%202015.%20Effect%20of%20specialt" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Iqbal, Z., I. Pasha, M.S. Hanif, M.A. Randhawa, A.R. Rehman and A. M. Arif. 2015. Effect of specialty flours on physical and sensorial attributes of cookies. Pakistan Journal of Agricultural Sciences. 52:1087-1094. (Impact Factor: 0.95, HEC Recognized ‘X’ Category ISSN: 0552-9034). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2015</span>
+              <div><a href="https://scholar.google.com/scholar?q=Nasir%2C%20M.A.%2C%20I.%20Pasha%2C%20M.S.%20Butt%20and%20H.%20Nawaz.%202015.%20Biochemical%20characterization%20of%20quinoa%20with%20spe" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Nasir, M.A., I. Pasha, M.S. Butt and H. Nawaz. 2015. Biochemical characterization of quinoa with special reference to its protein quality. Pakistan Journal of Agricultural Sciences. 52:731-737. (Impact Factor: 0.95, HEC Recognized ‘X’ Category ISSN: 0552-9034). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2014</span>
+              <div><a href="https://scholar.google.com/scholar?q=Younas%2C%20M.A.%2C%20M.S.%20Butt%2C%20I.%20Pasha%20and%20M.%20Shahid.%202014.%20Development%20of%20zinc%20fortified%20chitosan%20and%20al" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Younas, M.A., M.S. Butt, I. Pasha and M. Shahid. 2014. Development of zinc fortified chitosan and alginatebased coatings for apricot. Pakistan Journal of Agricultural Sciences. 51:1033-1039. (Impact Factor: 0.95, HEC Recognized ‘X’ Category ISSN: 0552-9034). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2013</span>
+              <div><a href="https://doi.org/10.9755/ejfa.v26i11.18980" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Haider, M. S., I.A. Khan, S. A. Naqvi, M.J. Jaskani, R.W. Khan, M. Nafees, Maryam and I. Pasha. 2013. Fruit developmental stages effects on biochemical attributes in date palm. Pakistan Journal of Agricultural Sciences. 50:577-583. (Impact Factor: 0.95, HEC Recognized ‘X’ Category ISSN: 0552-9034). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2012</span>
+              <div><a href="https://scholar.google.com/scholar?q=Sultan%2C%20M.%20T.%2C%20M.%20S.%20Butt%2C%20S.%20Akhtar%2C%20I.%20Pasha%2C%20R.%20S.%20Ahmad%2C%20A.%20N.%20Ahmad%20and%20Mir%20M.N.%20Qayyum.%202012.%20" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Sultan, M. T., M. S. Butt, S. Akhtar, I. Pasha, R. S. Ahmad, A. N. Ahmad and Mir M.N. Qayyum. 2012. Supplementation of Nigella sativa fixed and essential oil mediates potassium bromate induced oxidative stress and multiple organ toxicity. Pakistan Journal of Pharmaceutical Sciences. 25:175-181. (Impact Factor: 0.79, HEC Recognized ‘Y’ Category ISSN: 1011-601X).</a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2007</span>
+              <div><a href="https://doi.org/10.1046/j.1365-2621.2002.00540.x" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Anjum, F.M., I. Pasha, M.A. Bugti and M.S. Butt. 2007. Mineral composition of different rice varieties and their milling fractions. Pakistan Journal of Agricultural Sciences. 44:332-336. (Impact Factor: 0.95, HEC Recognized ‘X’ Category ISSN: 0552-9034). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2006</span>
+              <div><a href="https://scholar.google.com/scholar?q=Pasha%2C%20I.%2C%20F.%20M.%20Anjum%20and%20M.%20S.%20Rashid.%202006.%20Near%20Infrared%20spectroscopic%20technique%20to%20predict%20diff" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I., F. M. Anjum and M. S. Rashid. 2006. Near Infrared spectroscopic technique to predict different wheat quality characteristics. Pakistan Journal of Agricultural Sciences. 43:146-151. (Impact Factor: 0.95, HEC Recognized ‘X’ Category ISSN: 0552-9034). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2003</span>
+              <div><a href="https://doi.org/10.1016/j.foodchem.2007.06.011" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Anjum, F.M., A. Ahmad, I. Pasha and M. S. Butt. 2003. Micronutrients in Various Mill Streams of Flour of Different Wheat Cultivars. Pakistan Journal of Agricultural Sciences. 40:180-185.(Impact Factor: 0.95, HEC Recognized ‘X’ Category ISSN: 0552-9034). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2002</span>
+              <div><a href="https://scholar.google.com/scholar?q=Tufail%2C%20F.%2C%20I.%20Pasha%2C%20M.S.%20Butt%2C%20N.%20Abbas%20and%20S.%20Afzal.%202002.%20Use%20of%20Date%20Syrup%20in%20the%20Preparation%20o" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Tufail, F., I. Pasha, M.S. Butt, N. Abbas and S. Afzal. 2002. Use of Date Syrup in the Preparation of Low Caloric Cakes Replacing Sucrose. Pakistan Journal of Agricultural Sciences. 39:149-153. (Impact Factor: 0.95, HEC Recognized ‘X’ Category ISSN: 0552-9034). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2002</span>
+              <div><a href="https://scholar.google.com/scholar?q=Huma%2C%20N.%2C%20I.%20Pasha%2C%20S.%20Shakoor%2C%20Z.%20Javed%20and%20A.%20Iqbal.%202002.%20Incorporation%20of%20legumes%20as%20non-meat%20Pr" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Huma, N., I. Pasha, S. Shakoor, Z. Javed and A. Iqbal. 2002. Incorporation of legumes as non-meat Protein extenders in fresh beef sausages. Pakistan Journal of Agricultural Sciences. 39: 236-239. (Impact Factor: 0.95, HEC Recognized ‘X’ Category ISSN: 0552-9034). <span class="if-badge">IF 0.95</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2002</span>
+              <div><a href="https://doi.org/10.1111/j.1745-4557.2007.00133.x" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Pasha, I., M. S. Butt, F. M. Anjum and N. Shahzadi. 2002. Effect of Dietetic Sweeteners on the Quality of Cookies. International Journal of Agriculture and Biology. 4:245-248. (Impact Factor: 0.73, HEC RecognizedCategory ‘Y’ ISSN: 1814-9596). <span class="if-badge">IF 0.73</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2002</span>
+              <div><a href="https://doi.org/10.1016/j.foodchem.2007.06.011" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Butt, M.S., I. Pasha, F. Tufail and F. M. Anjum. 2002. Use of Low Absorptive Sweeteners in Cakes. International Journal of Agriculture and Biology. 4:249-251. (Impact Factor: 0.73, HEC Recognized Category ‘Y’ ISSN: 1814-9596). <span class="if-badge">IF 0.73</span></a></div>
+            </li>
+            <li data-category="journals">
+              <span class="pub-year">2002</span>
+              <div><a href="https://scholar.google.com/scholar?q=Rehman%2C%20S.U.%2C%20J.A.%20Awan%2C%20I.%20Pasha%2C%20N.%20Huma%20and%20A.%20Mumtaz.%202002.%20Preparation%20and%20Application%20of%20Bread" target="_blank" style="text-decoration:none; color:inherit;" class="pub-link">Rehman, S.U., J.A. Awan, I. Pasha, N. Huma and A. Mumtaz. 2002. Preparation and Application of Bread Improver using locally available Ingredients.  Pakistan Journal of Agricultural Sciences. 39:154-158. (Impact Factor: 0.95, HEC Recognized ‘X’ Category ISSN: 0552-9034). <span class="if-badge">IF 0.95</span></a></div>
             </li>
           </ul>
 
-          <!-- Patents -->
-          <h3 class="sub-heading">Patents &amp; Trade Marks</h3>
-          <ul class="pub-list">
-            <li data-category="patents">
-              <span class="pub-year">IPO</span>
-              <div>
-                <strong>Patent:</strong> <em>Ameliorated Maize Bran Supplement Flour</em><br/>
-                <span style="font-size:0.8rem;color:var(--muted);">Intellectual Property Organization of Pakistan</span>
-              </div>
-            </li>
-            <li data-category="patents">
-              <span class="pub-year">IPO</span>
-              <div>
-                <strong>Patent:</strong> <em>Pragmatic Multigrain Formulation for Chapattis</em><br/>
-                <span style="font-size:0.8rem;color:var(--muted);">Intellectual Property Organization of Pakistan</span>
-              </div>
-            </li>
-            <li data-category="patents">
-              <span class="pub-year">TM</span>
-              <div>
-                <strong>Trade Mark: Cere Bran®</strong> — Modified cereal bran product<br/>
-                <span style="font-size:0.8rem;color:var(--muted);">Registered Trade Mark, Intellectual Property Organization of Pakistan</span>
-              </div>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
@@ -230,7 +835,6 @@
         <ul class="footer-links">
           <li><a href="#" onclick="document.querySelector('[data-filter=\'books\']').click();return false;">Books &amp; Chapters</a></li>
           <li><a href="#" onclick="document.querySelector('[data-filter=\'journals\']').click();return false;">Journal Articles</a></li>
-          <li><a href="#" onclick="document.querySelector('[data-filter=\'patents\']').click();return false;">Patents</a></li>
         </ul>
       </div>
       <div>
@@ -251,7 +855,7 @@
     </div>
   </footer>
 
-  <button id="back-to-top" aria-label="Back to top">↑</button>
+  <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
   <script src="main.js"></script>
 </body>
 </html>

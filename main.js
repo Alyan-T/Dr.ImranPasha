@@ -31,7 +31,7 @@ if (toggle && links) {
 // ── Intersection Observer (fade-in) ─────────────
 if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const targets = document.querySelectorAll(
-    '.tl-item, .research-card, .pub-list li, .grant-list li, ' +
+    '.tl-item, .research-card, ' +
     '.student-card, .ql-card, .pub-box, .country-row:not(.header), ' +
     '.awards-list li'
   );
