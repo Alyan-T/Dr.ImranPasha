@@ -67,8 +67,19 @@ document.querySelectorAll('.filter-tabs').forEach(tabGroup => {
       tabs.forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
       const target = tab.dataset.filter;
-      const container = tabGroup.nextElementSibling;
+      const container = tabGroup.closest('.section-content-col');
       if (!container) return;
+      
+      // Also optionally toggle visibility of the sub-headings themselves
+      const subheadings = container.querySelectorAll('.sub-heading');
+      subheadings.forEach(sh => {
+        if (target === 'all') {
+          sh.style.display = '';
+        } else {
+          sh.style.display = 'none'; // hide subheadings when filtering to keep it clean
+        }
+      });
+
       container.querySelectorAll('[data-category]').forEach(item => {
         const show = target === 'all' || item.dataset.category === target;
         item.style.display = show ? '' : 'none';
