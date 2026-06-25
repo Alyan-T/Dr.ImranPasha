@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drimran-pasha.vercel.app/sitemap.xml
